@@ -12,23 +12,24 @@ feature 'Admin dashboard', %q{
     @admin = create(:user, :admin)
   end
 
-  scenario 'signin and redirect to admin dashboard', focus: true do
+  scenario 'admin user signin and redirect to admin dashboard' do
+    visit root_path
+    click_link 'Sign in'
+    fill_in 'Email', with: @admin.email, match: :prefer_exact
+    fill_in 'Password', with: @admin.password, match: :prefer_exact
+    click_button 'Sign in'
+    expect(current_path).to eql admin_dashboard_path
+  end
+
+  scenario 'non-admin user cannot access admin dashboard', focus: true do
+    @user = create(:user)
     visit root_path
     click_link 'Sign in'
     fill_in 'Email', with: @user.email, match: :prefer_exact
     fill_in 'Password', with: @user.password, match: :prefer_exact
     click_button 'Sign in'
-    expect(current_path).to eql admin_dashboard_path
-  end
-
-  scenario 'add a new school account' do
-    login(@admin)
-    click_link 'Add new account'
-    fill_in 'Name', with: 'Harbor School'
-    fill_in 'Location', with: 'New York'
-    fill_in 'Coordinator', with: 'Bob Bossman'
-    fill_in 'Coordinator email', with: 'bob@bossman.com'
-    
+    visit admin_dashboard_path
+    expect(current_path).to eql dashboard_path
   end
 
 end
