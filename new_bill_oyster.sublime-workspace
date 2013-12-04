@@ -1,0 +1,923 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"for	for (…) {…}"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/helpers/application_helper.rb",
+			"settings":
+			{
+				"buffer_size": 476,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.haml",
+			"settings":
+			{
+				"buffer_size": 453,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/_header.html.haml",
+			"settings":
+			{
+				"buffer_size": 764,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/_header.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/routes.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/application.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/dashboards_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/dashboards/show.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/sidebar.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/layout.sass",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/registrations/new.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/models/dashboard.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/sessions/new.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/application.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/welcome/index.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/welcome.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/welcome_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/Gemfile",
+		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131203162603_enable_uuid_ossp_extension.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/models/user.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/db/schema.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/application.css",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/base.sass",
+		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131203164829_devise_create_users.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/database.yml",
+		"/home/sircharles/programming/javascript/javascript_hacking/coffee_book.coffee",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array_reduce.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/object_equality.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/basic_js_inheritance.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/truthy_and_falsy.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array#concat.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/ditching-jQuery.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/metadata_in_arrays.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/emulating_block_scope.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/javascript_linting.js",
+		"/home/sircharles/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/sircharles/programming/javascript/javascript_hacking/bits_and_bobs.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array#index_of.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/testing_for_NaN.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array_methods_on_strings.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array_filter.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array_#every.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/chap_8_ob_oriented.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/module_pattern.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/numbers_and_dot_notation.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/object_defineProperty.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/chatp_9_regex.js",
+		"/home/sircharles/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/redefine_undefined.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/function#bind.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/variable_hoisting.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/IIFE_immediately_invoked_fcns.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/in_vs_hasOwnProperty.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/eloquent_javascript_chaps_6-10.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/chap_7_searching.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/array_map_from_scratch.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/chapter_5.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/javascript_drip/bool_objects_vs_primatives.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/playing_with_dates.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript_chaps_6-10.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/cat_mungeing.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/early_chaps.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/eloquent_javascript/cat_mungeing2.js",
+		"/home/sircharles/programming/javascript/javascript_hacking/hardNuts.js",
+		"/home/sircharles/programming/python/MIT course/drunken_walk.py",
+		"/home/sircharles/programming/python/MIT course/Eloquent_Javascript/early_chaps.js",
+		"/home/sircharles/.config/sublime-text-2/Packages/User/Python.sublime-settings",
+		"/home/sircharles/.config/sublime-text-2/Packages/User/Python/Python_comment.sublime-snippet",
+		"/home/sircharles/programming/python/MIT course/GoogleExercises/list1.py",
+		"/home/sircharles/Dropbox/PROGRAMMING/Python/Google Python Course/google-python-exercises/hello.py",
+		"/home/sircharles/programming/python/MIT course/Week 7/julyTemps.txt",
+		"/home/sircharles/programming/python/MIT course/utoronto_course.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet6/ps6.py",
+		"/home/sircharles/Dropbox/PROGRAMMING/Python/Google Python Course/google-python-exercises/basic/list1.py",
+		"/home/sircharles/programming/python/MIT course/week_6_method_bouillabaisse.py",
+		"/home/sircharles/programming/python/MIT course/Week 7/temp_plotter.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet5/ps5_encryption.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet6/triggers.txt",
+		"/home/sircharles/programming/python/MIT course/ProblemSet6/feedparser.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet6/project_util.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet6/ps6_test.py",
+		"/home/sircharles/programming/python/MIT course/dialect.py",
+		"/home/sircharles/programming/python/MIT course/methodSoup.py",
+		"/home/sircharles/programming/python/MIT course/hashSet.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet3/ps3_hangman.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet4/ps4a.py",
+		"/home/sircharles/programming/python/MIT course/fileinfo.py",
+		"/home/sircharles/programming/python/MIT course/L11_hand.py",
+		"/home/sircharles/programming/python/MIT course/translateBadly.py",
+		"/home/sircharles/programming/python/MIT course/baseHTMLProcessor.py",
+		"/home/sircharles/programming/python/MIT course/hardNuts.py",
+		"/home/sircharles/programming/python/MIT course/get_guessed_word.py",
+		"/home/sircharles/programming/python/MIT course/oddTuples.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet5/ps5_recursion.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet5/ps5_pseudo.txt",
+		"/home/sircharles/Dropbox/CODE/Python/MIT Course/is_palindrome.py",
+		"/home/sircharles/programming/python/MIT course/gcdRecur.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet4/ps4b.py",
+		"/home/sircharles/programming/python/MIT course/ProblemSet4/test_ps4a.py",
+		"/home/sircharles/programming/python/MIT course/MIT_Python.sublime-workspace",
+		"/home/sircharles/programming/python/MIT course/radiationExposure.py",
+		"/home/sircharles/rails_projects/my_app_template.rb",
+		"/home/sircharles/programming/python/MIT course/ProblemSet3/ps3_newton.py",
+		"/home/sircharles/programming/python/MIT course/semordinalap.py",
+		"/home/sircharles/programming/python/MIT course/charIsIn.py",
+		"/home/sircharles/Dropbox/CODE/Python/MIT Course/bisect_search.py",
+		"/home/sircharles/programming/javascript/sshare class/example.js",
+		"/home/sircharles/programming/javascript/sshare class/index.html",
+		"/home/sircharles/programming/javascript/sshare class/example2.js",
+		"/home/sircharles/programming/python/MIT course/prob_set_3-1.py",
+		"/home/sircharles/programming/python/MIT course/prob_set_2.py",
+		"/home/sircharles/.config/sublime-text-2/Packages/User/javascript-node.sublime-build",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/lib/tasks/search_suggestions.rake",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/controllers/search_suggestions_controller.rb",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/assets/javascripts/products.js.coffee",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/models/search_suggestion.rb",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/db/seeds.rb",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/assets/javascripts/application.js",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/Gemfile",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/views/products/index.html.erb",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/controllers/products_controller.rb",
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/models/product.rb",
+		"/home/sircharles/rails_projects/fashion_cohort/app/assets/stylesheets/application.scss",
+		"/home/sircharles/rails_projects/fashion_cohort/app/views/pages/welcome.html.haml",
+		"/home/sircharles/rails_projects/fashion_cohort/app/views/layouts/_header.html.haml",
+		"/home/sircharles/rails_projects/fashion_cohort/app/views/layouts/application.html.haml",
+		"/home/sircharles/rails_projects/fashion_cohort/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/home/sircharles/rails_projects/fashion_cohort/app/views/pages/index.html.haml",
+		"/home/sircharles/rails_projects/fashion_cohort/config/routes.rb",
+		"/home/sircharles/rails_projects/fashion_cohort/app/controllers/pages_controller.rb",
+		"/home/sircharles/rails_projects/fashion_cohort/app/controllers/omniauth_callbacks_controller.rb"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"<project>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"formality",
+			") ",
+			"function",
+			"formatDate"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/helpers/application_helper.rb",
+					"settings":
+					{
+						"buffer_size": 476,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/layouts/application.html.haml",
+					"settings":
+					{
+						"buffer_size": 453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								365,
+								365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/layouts/_header.html.haml",
+					"settings":
+					{
+						"buffer_size": 764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								711,
+								711
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 301.0
+	},
+	"output.exec":
+	{
+		"height": 332.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_head",
+				"app/views/layouts/_header.html.haml"
+			],
+			[
+				"apphaml",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"side",
+				"app/views/sidebar.html.haml"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"dashcon",
+				"app/controllers/dashboards_controller.rb"
+			],
+			[
+				"apphelp",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"apprb",
+				"config/application.rb"
+			],
+			[
+				"new",
+				"app/views/devise/sessions/new.html.haml"
+			],
+			[
+				"welcom",
+				"app/views/layouts/welcome.html.haml"
+			],
+			[
+				"appham",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"wel",
+				"app/controllers/welcome_controller.rb"
+			],
+			[
+				"lay",
+				"app/assets/stylesheets/layout.sass"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"appcss",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"mig",
+				"db/migrate/20131203164829_devise_create_users.rb"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"enab",
+				"db/migrate/20131203162603_enable_uuid_ossp_extension.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"arr",
+				"javascript_drip/array_reduce.js"
+			],
+			[
+				"bit",
+				"bits_and_bobs.js"
+			],
+			[
+				"ever",
+				"javascript_drip/array_#every.js"
+			],
+			[
+				"elo",
+				"eloquent_javascript/chap_8_ob_oriented.js"
+			],
+			[
+				"red",
+				"javascript_drip/redefine_undefined.js"
+			],
+			[
+				"earl",
+				"eloquent_javascript/early_chaps.js"
+			],
+			[
+				"goog",
+				"GoogleExercises/list1.py"
+			],
+			[
+				"boui",
+				"week_6_method_bouillabaisse.py"
+			],
+			[
+				"trir",
+				"ProblemSet6/triggers.txt"
+			],
+			[
+				"test",
+				"ProblemSet6/ps6_test.py"
+			],
+			[
+				"bouil",
+				"week_6_method_bouillabaisse.py"
+			],
+			[
+				"feed",
+				"ProblemSet6/feedparser.py"
+			],
+			[
+				"han",
+				"ProblemSet3/ps3_hangman.py"
+			],
+			[
+				"bou",
+				"week_6_method_bouillabaisse.py"
+			],
+			[
+				"l11",
+				"L11_hand.py"
+			],
+			[
+				"soup",
+				"methodSoup.py"
+			],
+			[
+				"enc",
+				"ProblemSet5/ps5_encryption.py"
+			],
+			[
+				"hang",
+				"ProblemSet3/ps3_hangman.py"
+			],
+			[
+				"file",
+				"fileinfo.py"
+			],
+			[
+				"get",
+				"get_guessed_word.py"
+			],
+			[
+				"odd",
+				"oddTuples.py"
+			],
+			[
+				"recur",
+				"gcdRecur.py"
+			],
+			[
+				"pseu",
+				"ProblemSet5/ps5_pseudo.txt"
+			],
+			[
+				"ps4",
+				"ProblemSet4/ps4a.py"
+			],
+			[
+				"ex",
+				"example.js"
+			],
+			[
+				"search",
+				"app/models/search_suggestion.rb"
+			],
+			[
+				"sear",
+				"app/controllers/search_suggestions_controller.rb"
+			],
+			[
+				"inde",
+				"app/views/products/index.html.erb"
+			],
+			[
+				"pro",
+				"app/assets/javascripts/products.js.coffee"
+			],
+			[
+				"pru",
+				"app/models/product.rb"
+			],
+			[
+				"contr",
+				"app/controllers/products_controller.rb"
+			],
+			[
+				"appl",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"head",
+				"app/views/layouts/_header.html.haml"
+			],
+			[
+				"appication.hm",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"overr",
+				"app/assets/stylesheets/foundation_and_overrides.scss"
+			],
+			[
+				"app",
+				"app/assets/stylesheets/application.scss"
+			],
+			[
+				"coffee",
+				"app/assets/javascripts/pages.js.coffee"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"omni",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"om",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"oni",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"page",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"welco",
+				"app/views/pages/welcome.html.haml"
+			],
+			[
+				"applic",
+				"config/application.rb"
+			],
+			[
+				"see",
+				"db/seeds.rb"
+			],
+			[
+				"welc",
+				"app/views/pages/welcome.html.haml"
+			],
+			[
+				"edt",
+				"app/views/devise/registrations/edit.html.erb"
+			],
+			[
+				"edi",
+				"app/views/devise/registrations/edit.html.erb"
+			],
+			[
+				"foot",
+				"app/views/layouts/_footer.html.haml"
+			],
+			[
+				"pages",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"migr",
+				"db/migrate/20130203043857_add_title_to_users.rb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"we",
+				"app/views/pages/welcome.html.haml"
+			],
+			[
+				"header",
+				"app/views/layouts/_header.html.haml"
+			],
+			[
+				"contro",
+				"app/controllers/omniauth_callbacks_controller.rb"
+			],
+			[
+				"devis",
+				"config/initializers/devise.rb"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"helper",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"datab",
+				"config/database.yml"
+			],
+			[
+				"todos",
+				"app/assets/javascripts/todos.js.coffee"
+			],
+			[
+				"update",
+				"app/views/todos/update.js.haml"
+			],
+			[
+				"todo",
+				"app/controllers/todos_controller.rb"
+			],
+			[
+				"crea",
+				"app/views/todos/create.js.erb"
+			],
+			[
+				"_todo",
+				"app/views/todos/_todo.html.haml"
+			],
+			[
+				"form",
+				"app/views/todos/_form.html.haml"
+			],
+			[
+				"todos.js",
+				"app/views/todos/new.js.erb"
+			],
+			[
+				"shouty",
+				"shOUTY_todo_SAMSUNG.sublime-project"
+			],
+			[
+				"migra",
+				"db/migrate/20130110192853_create_todos.rb"
+			],
+			[
+				"create",
+				"app/views/todos/create.js.erb"
+			],
+			[
+				"_to",
+				"app/views/todos/_todo.html.haml"
+			],
+			[
+				"des",
+				"app/views/todos/destroy.js.erb"
+			],
+			[
+				"_form",
+				"app/views/todos/_form.html.haml"
+			],
+			[
+				"appli",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"ind",
+				"app/views/todos/index.html.haml"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"blocc",
+				"/home/sircharles/rails_projects/bloccit/bloccit.sublime-project"
+			],
+			[
+				"arar",
+				"/home/sircharles/rails_projects/armen_farms/ararat_farm.sublime-project"
+			],
+			[
+				"bill",
+				"/home/sircharles/rails_projects/billion_oyster_project/billion_oyster_project.sublime-project"
+			],
+			[
+				"book",
+				"/home/sircharles/rails_projects/bookcity/book_city.sublime-project"
+			],
+			[
+				"ruby",
+				"/home/sircharles/programming/ruby/ruby_hacking.sublime-project"
+			],
+			[
+				"int",
+				"/home/sircharles/rails_projects/tbot_intermed_wshop/tbot_intermediate.sublime-project"
+			],
+			[
+				"armen",
+				"/home/sircharles/sshfs/railsprojects/armen_farms/netbook_armen_farm_v1.sublime-project"
+			],
+			[
+				"arme",
+				"/home/sircharles/sshfs/railsprojects/armen_farms/netbook_armen_farm_v1.sublime-project"
+			],
+			[
+				"mongo",
+				"/home/sircharles/sshfs/webdev/mongodb_course/Mongo_For_Devs.sublime-project"
+			],
+			[
+				"mit",
+				"/home/sircharles/programming/python/MIT course/MIT_Python.sublime-project"
+			],
+			[
+				"java",
+				"/home/sircharles/programming/javascript/javascript_hacking/javascript_hacking.sublime-project"
+			],
+			[
+				"alepp",
+				"/home/sircharles/web_dev/aleppo_soap_sinatra/aleppo_sinatra.sublime-project"
+			],
+			[
+				"sina",
+				"/home/sircharles/web_dev/sinatra_sings_the_tides/sinatra_tides_final.sublime-project"
+			],
+			[
+				"GA",
+				"/home/sircharles/web_dev/GA_frontend_project_1/GA_FE_project_1.sublime-project"
+			],
+			[
+				"bibl",
+				"/home/sircharles/rails_projects/bibliotravel/biblio_travel.sublime-project"
+			],
+			[
+				"biblio",
+				"/home/sircharles/rails_projects/bibliotravel/biblio_travel.sublime-project"
+			],
+			[
+				"sinta",
+				"/home/sircharles/web_dev/sinatra_blog_project/sinatra_blog_project.sublime-project"
+			],
+			[
+				"bibli",
+				"/home/sircharles/rails_projects/bibliotravel/biblio_travel.sublime-project"
+			],
+			[
+				"fash",
+				"/home/sircharles/rails_projects/fashion_cohort/fashion_cohort.sublime-project"
+			],
+			[
+				"pyt",
+				"/home/sircharles/programming/python/MIT course/MIT_Python.sublime-project"
+			],
+			[
+				"raff",
+				"/home/sircharles/rails_projects/raffler_ember_emblem/raffler_ember_emblem.sublime-project"
+			],
+			[
+				"gut",
+				"/home/sircharles/sshfs/rails/project_gutenberg/project_gutenberg.sublime-project"
+			],
+			[
+				"monk",
+				"/home/sircharles/web_dev/monkey_blog/monkey_blog.sublime-project"
+			],
+			[
+				"nfo",
+				"/home/sircharles/rails_projects/nfoshare.com/nfoshare_project.sublime-project"
+			],
+			[
+				"sup",
+				"/home/sircharles/sshfs/rails/super_twit/super_twit.sublime-project"
+			],
+			[
+				"pytho",
+				"/home/sircharles/programming/python/MIT course/MIT_Python.sublime-project"
+			],
+			[
+				"beau",
+				"/home/sircharles/web_dev/beaugaines_site_MMAN_SUSY/beaugaines_REVISITED.sublime-project"
+			],
+			[
+				"",
+				"/home/sircharles/web_dev/sinatra_blog_project/sinatra_blog_project.sublime-project"
+			],
+			[
+				"blog",
+				"/home/sircharles/web_dev/monkey_blog/monkey_blog.sublime-project"
+			],
+			[
+				"compass",
+				"/home/sircharles/web_dev/frontend_hack_project/compass_n_susy_project.sublime-project"
+			],
+			[
+				"rc",
+				"/home/sircharles/rails_projects/rcasts_todo_list/rcasts_todo.sublime-project"
+			],
+			[
+				"sh",
+				"/home/sircharles/rails_projects/new_shOUTy_todo/new_shOUTy_todo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 241.0,
+	"status_bar_visible": false
+}

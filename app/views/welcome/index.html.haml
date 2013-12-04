@@ -1,0 +1,8 @@
+.welcome
+  .row
+    .large-ten.large-centered.columns
+      .panel
+        %section.user-accounts 
+          %h2 Welcome
+          = link_to 'Sign in', new_user_session_path, class: 'medium radius button'
+          = link_to 'Sign up', new_user_registration_path, class: 'medum radius button'
