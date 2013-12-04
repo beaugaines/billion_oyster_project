@@ -10,9 +10,10 @@ feature 'User signin', %q{
 
   before do
     @user = create(:user)
+    @school = create(:school)
   end
 
-  scenario 'signin and redirect to dashboard' do
+  scenario 'signin and redirect to school dashboard' do
     visit root_path
     click_link 'Sign in'
     fill_in 'Email', with: @user.email, match: :prefer_exact

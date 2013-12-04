@@ -1,10 +1,11 @@
 NewBillOyst::Application.routes.draw do
   devise_for :users
   
-  authenticated :user do
-    root to: 'dashboards#show', as: 'authenticated_root'
+  namespace :admin do
+    resource :dashboard, only: [:show]
   end
 
+  resource :dashboard, only: [:show] 
+
   root to: 'welcome#index'
-  
 end
