@@ -9,7 +9,7 @@ feature 'Admin dashboard', %q{
 } do
 
   before do
-    @user = create(:user, :admin)
+    @admin = create(:user, :admin)
   end
 
   scenario 'signin and redirect to admin dashboard', focus: true do
@@ -22,7 +22,13 @@ feature 'Admin dashboard', %q{
   end
 
   scenario 'add a new school account' do
-    pending
+    login(@admin)
+    click_link 'Add new account'
+    fill_in 'Name', with: 'Harbor School'
+    fill_in 'Location', with: 'New York'
+    fill_in 'Coordinator', with: 'Bob Bossman'
+    fill_in 'Coordinator email', with: 'bob@bossman.com'
+    
   end
 
 end

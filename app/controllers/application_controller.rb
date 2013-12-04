@@ -6,9 +6,8 @@ class ApplicationController < ActionController::Base
   protected
 
   def authorize_admin!
-    redirect_to root_path unless current_user.admin?
+    redirect_to dashboard_path unless current_user.admin?
   end
-  
 
   def after_sign_in_path_for resource
     if current_user.admin?
