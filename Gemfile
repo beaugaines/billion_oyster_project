@@ -21,6 +21,12 @@ gem 'haml-rails'
 # js flash
 gem 'toastr-rails'
 
+# forms
+gem 'simple_form'
+
+# gmaps
+gem 'gmaps4rails'
+
 # authorization
 gem 'pundit'
 
