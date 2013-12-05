@@ -13,6 +13,7 @@ feature 'New account creation', %q{
 
   scenario 'add a new school account' do
     login(@admin)
+    click_link 'Manage accounts'
     click_link 'Add new account'
     fill_in 'Name', with: 'Harbor School'
     fill_in 'Location', with: 'New York'

@@ -1,0 +1,48 @@
+!!! 5
+%html{ :lang => "en"}
+  %head
+    %meta{ :charset => "utf-8" }
+    
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
+
+    %title= content_for?(:title) ? yield(:title) : "BOP - Admin"
+
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "custom.modernizr"
+    = csrf_meta_tag
+
+  %body
+    = render 'layouts/header'
+    = toastr_flash
+
+    .row
+      // sidebar
+      .large-3.columns
+        .panel
+          %a{href: "#"}
+            %img{src: "http://placehold.it/300x240&text=[img]"}/
+          %h5
+            %a{href: "#"} Joe User
+          .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
+            %section.section
+              %h5.title
+                %a{href: "#"} Recent Activity
+            %section.section
+              %h5.title
+                %a{href: "#"} Manage Users
+            %section.section
+              %h5.title
+                = link_to 'Manage Accounts', accounts_path
+            %section.section
+              %h5.title
+                %a{href: "#"} Run reports
+            %section.section
+              %h5.title
+                %a{href: "#"} Chat
+
+
+      = yield
+
+    = render 'layouts/footer'
+
+    = javascript_include_tag "application"
