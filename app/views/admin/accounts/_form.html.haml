@@ -8,9 +8,9 @@
     %br/ 
     = f.text_field :city
   %div
-    = f.select :user_id
+    = f.label :user_id
     %br/
     = f.collection_select(:user_id, @users, :id, :name, {})
   %div
-    = f.submit, class: 'medium radius secondary button'
+    = f.submit 'Add new account', class: 'medium radius secondary button'
 

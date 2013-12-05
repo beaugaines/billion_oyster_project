@@ -12,10 +12,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/views/admin/dashboards/show.html.haml",
+			"file": "app/views/admin/accounts/_form.html.haml",
 			"settings":
 			{
-				"buffer_size": 34,
+				"buffer_size": 370,
 				"line_ending": "Unix"
 			}
 		},
@@ -23,15 +23,31 @@
 			"file": "spec/features/accounts_spec.rb",
 			"settings":
 			{
-				"buffer_size": 616,
+				"buffer_size": 631,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "spec/support/user_helper.rb",
+			"file": "spec/factories/users.rb",
 			"settings":
 			{
-				"buffer_size": 234,
+				"buffer_size": 329,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/setup_mail.rb",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin/accounts_controller.rb",
+			"settings":
+			{
+				"buffer_size": 361,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,35 +96,51 @@
 	},
 	"file_history":
 	[
+		"/home/sircharles/rails_projects/new_bill_oyst/config/environments/development.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/application.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/application.yml",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/initializers/setup_mail.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/registrations/new.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/db/schema.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/models/user.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/zeus.json",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/admin/accounts/new.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/admin/accounts/index.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin/accounts_controller.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/spec/features/admin_dashboard_spec.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/features/accounts_spec.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/admin.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/config/routes.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/.gitignore",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin/dashboards_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131205202802_create_accounts.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin_controller.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin/base_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/application.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/admin/dashboards/show.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/dashboards/show.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/_header.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/layout.sass",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/javascripts/application.js",
+		"/home/sircharles/rails_projects/new_bill_oyst/vendor/assets/javascripts/custom.modernizr.js",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/_footer.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/support/user_helper.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/welcome_controller.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/application_controller.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/admin/dashboard/show.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/dashboards_controller.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin/dashboards_controller.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/dashboards/show.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/spec/features/user_signin_spec.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131204202759_add_admin_to_users.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/spec/factories/users.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/welcome.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/Gemfile",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/helpers/application_helper.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/application.html.haml",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/_header.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/spec/spec_helper.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/spec/support/user_helper.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/config/application.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/sidebar.html.haml",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/layout.sass",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/registrations/new.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/models/dashboard.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/sessions/new.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/welcome/index.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131203162603_enable_uuid_ossp_extension.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/models/user.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/db/schema.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/application.css",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/base.sass",
 		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131203164829_devise_create_users.rb",
@@ -191,23 +223,7 @@
 		"/home/sircharles/programming/python/MIT course/radiationExposure.py",
 		"/home/sircharles/rails_projects/my_app_template.rb",
 		"/home/sircharles/programming/python/MIT course/ProblemSet3/ps3_newton.py",
-		"/home/sircharles/programming/python/MIT course/semordinalap.py",
-		"/home/sircharles/programming/python/MIT course/charIsIn.py",
-		"/home/sircharles/Dropbox/CODE/Python/MIT Course/bisect_search.py",
-		"/home/sircharles/programming/javascript/sshare class/example.js",
-		"/home/sircharles/programming/javascript/sshare class/index.html",
-		"/home/sircharles/programming/javascript/sshare class/example2.js",
-		"/home/sircharles/programming/python/MIT course/prob_set_3-1.py",
-		"/home/sircharles/programming/python/MIT course/prob_set_2.py",
-		"/home/sircharles/.config/sublime-text-2/Packages/User/javascript-node.sublime-build",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/lib/tasks/search_suggestions.rake",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/controllers/search_suggestions_controller.rb",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/assets/javascripts/products.js.coffee",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/models/search_suggestion.rb",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/db/seeds.rb",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/assets/javascripts/application.js",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/Gemfile",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/views/products/index.html.erb"
+		"/home/sircharles/programming/python/MIT course/semordinalap.py"
 	],
 	"find":
 	{
@@ -248,23 +264,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/views/admin/dashboards/show.html.haml",
+					"file": "app/views/admin/accounts/_form.html.haml",
 					"settings":
 					{
-						"buffer_size": 34,
+						"buffer_size": 370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								209,
+								209
 							]
 						],
 						"settings":
@@ -282,15 +298,15 @@
 					"file": "spec/features/accounts_spec.rb",
 					"settings":
 					{
-						"buffer_size": 616,
+						"buffer_size": 631,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								599,
-								599
+								476,
+								476
 							]
 						],
 						"settings":
@@ -307,10 +323,10 @@
 				},
 				{
 					"buffer": 2,
-					"file": "spec/support/user_helper.rb",
+					"file": "spec/factories/users.rb",
 					"settings":
 					{
-						"buffer_size": 234,
+						"buffer_size": 329,
 						"regions":
 						{
 						},
@@ -319,6 +335,60 @@
 							[
 								0,
 								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config/initializers/setup_mail.rb",
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								284,
+								284
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/admin/accounts_controller.rb",
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								344,
+								344
 							]
 						],
 						"settings":
@@ -384,36 +454,144 @@
 		"selected_items":
 		[
 			[
-				"appcon",
-				"app/controllers/application_controller.rb"
+				"acccon",
+				"app/controllers/admin/accounts_controller.rb"
 			],
 			[
-				"base",
-				"app/controllers/admin/base_controller.rb"
+				"setup",
+				"config/initializers/setup_mail.rb"
 			],
 			[
-				"wel",
-				"app/controllers/welcome_controller.rb"
+				"users",
+				"spec/factories/users.rb"
+			],
+			[
+				"appyml",
+				"config/application.yml"
+			],
+			[
+				"apprb",
+				"config/application.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"new",
+				"app/views/devise/registrations/new.html.haml"
+			],
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"accspe",
+				"spec/features/accounts_spec.rb"
+			],
+			[
+				"adminacc",
+				"app/controllers/admin/accounts_controller.rb"
+			],
+			[
+				"git",
+				".gitignore"
+			],
+			[
+				"zeus",
+				"zeus.json"
 			],
 			[
 				"rout",
 				"config/routes.rb"
 			],
 			[
-				"user",
-				"spec/support/user_helper.rb"
+				"adminhaml",
+				"app/views/layouts/admin.html.haml"
+			],
+			[
+				"dashcon",
+				"app/controllers/admin/dashboards_controller.rb"
+			],
+			[
+				"admin",
+				"app/views/layouts/admin.html.haml"
+			],
+			[
+				"acc",
+				"db/migrate/20131205202802_create_accounts.rb"
+			],
+			[
+				"admincon",
+				"app/controllers/admin_controller.rb"
+			],
+			[
+				"accun",
+				"spec/features/accounts_spec.rb"
 			],
 			[
 				"show",
 				"app/views/admin/dashboards/show.html.haml"
 			],
 			[
-				"admin",
+				"dash",
+				"app/controllers/admin/dashboards_controller.rb"
+			],
+			[
+				"apphaml",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"admindas",
+				"app/controllers/admin/dashboards_controller.rb"
+			],
+			[
+				"base",
+				"app/controllers/admin/base_controller.rb"
+			],
+			[
+				"adminda",
 				"spec/features/admin_dashboard_spec.rb"
 			],
 			[
-				"dash",
-				"app/controllers/dashboards_controller.rb"
+				"admind",
+				"spec/features/admin_dashboard_spec.rb"
+			],
+			[
+				"lay",
+				"app/assets/stylesheets/layout.sass"
+			],
+			[
+				"head",
+				"app/views/layouts/_header.html.haml"
+			],
+			[
+				"appjs",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"_head",
+				"app/views/layouts/_header.html.haml"
+			],
+			[
+				"appham",
+				"app/views/layouts/application.html.haml"
+			],
+			[
+				"appcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"wel",
+				"app/controllers/welcome_controller.rb"
 			],
 			[
 				"admi",
@@ -428,10 +606,6 @@
 				"Gemfile"
 			],
 			[
-				"users",
-				"spec/factories/users.rb"
-			],
-			[
 				"route",
 				"config/routes.rb"
 			],
@@ -440,44 +614,12 @@
 				"spec/spec_helper.rb"
 			],
 			[
-				"apprb",
-				"config/application.rb"
-			],
-			[
-				"_head",
-				"app/views/layouts/_header.html.haml"
-			],
-			[
-				"apphaml",
-				"app/views/layouts/application.html.haml"
-			],
-			[
 				"side",
 				"app/views/sidebar.html.haml"
 			],
 			[
-				"dashcon",
-				"app/controllers/dashboards_controller.rb"
-			],
-			[
 				"apphelp",
 				"app/helpers/application_helper.rb"
-			],
-			[
-				"new",
-				"app/views/devise/sessions/new.html.haml"
-			],
-			[
-				"appham",
-				"app/views/layouts/application.html.haml"
-			],
-			[
-				"lay",
-				"app/assets/stylesheets/layout.sass"
-			],
-			[
-				"schem",
-				"db/schema.rb"
 			],
 			[
 				"appcss",
@@ -626,10 +768,6 @@
 			[
 				"seed",
 				"db/seeds.rb"
-			],
-			[
-				"head",
-				"app/views/layouts/_header.html.haml"
 			],
 			[
 				"appication.hm",
@@ -796,10 +934,6 @@
 				"app/views/todos/index.html.haml"
 			],
 			[
-				"sche",
-				"db/schema.rb"
-			],
-			[
 				"spec",
 				"spec/spec_helper.rb"
 			]
@@ -945,7 +1079,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 241.0,
 	"status_bar_visible": false
 }

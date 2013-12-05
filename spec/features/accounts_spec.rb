@@ -9,6 +9,7 @@ feature 'New account creation', %q{
 
   before do
     @admin = create(:user, :admin)
+    @user = create(:user)
   end
 
   scenario 'add a new school account' do
@@ -17,8 +18,8 @@ feature 'New account creation', %q{
     click_link 'Add new account'
     fill_in 'Name', with: 'Harbor School'
     fill_in 'City', with: 'New York'
+    puts page.html
     select 'Coordinator', with: 'Bob Bossman'
-    fill_in 'Coordinator email', with: 'bob@bossman.com'
     click_button 'Create account'
     expect(page).to have_content('Account successfully creted')
   end
