@@ -21,3 +21,5 @@
 # zeus
 zeus.json
 custom_plan.rb
+# Ignore application configuration
+/config/application.yml
