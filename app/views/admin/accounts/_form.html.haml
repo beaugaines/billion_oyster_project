@@ -1,0 +1,16 @@
+= form_for [:admin, @account], url: admin_accounts_path do |f|
+  %div 
+    = f.label :name
+    %br/ 
+    = f.text_field :name
+  %div 
+    = f.label :city
+    %br/ 
+    = f.text_field :city
+  %div
+    = f.select :user_id
+    %br/
+    = f.collection_select(:user_id, @users, :id, :name, {})
+  %div
+    = f.submit, class: 'medium radius secondary button'
+

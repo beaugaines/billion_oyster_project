@@ -3,6 +3,7 @@ NewBillOyst::Application.routes.draw do
   
   namespace :admin do
     resource :dashboard, only: [:show]
+    resources :accounts
   end
 
   resource :dashboard, only: [:show] 

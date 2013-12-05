@@ -13,11 +13,11 @@ feature 'New account creation', %q{
 
   scenario 'add a new school account' do
     login(@admin)
-    click_link 'Manage accounts'
+    click_link 'Manage Accounts'
     click_link 'Add new account'
     fill_in 'Name', with: 'Harbor School'
-    fill_in 'Location', with: 'New York'
-    fill_in 'Coordinator', with: 'Bob Bossman'
+    fill_in 'City', with: 'New York'
+    select 'Coordinator', with: 'Bob Bossman'
     fill_in 'Coordinator email', with: 'bob@bossman.com'
     click_button 'Create account'
     expect(page).to have_content('Account successfully creted')
