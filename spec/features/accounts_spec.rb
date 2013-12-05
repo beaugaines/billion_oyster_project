@@ -19,7 +19,7 @@ feature 'New account creation', %q{
     fill_in 'Coordinator', with: 'Bob Bossman'
     fill_in 'Coordinator email', with: 'bob@bossman.com'
     click_button 'Create account'
-    expect(page).to have_content('Account successfully created')
+    expect(page).to have_content('Account successfully creted')
   end
 
 end

@@ -8,13 +8,41 @@
     %title= content_for?(:title) ? yield(:title) : "Untitled"
 
     = stylesheet_link_tag "application"
-    = javascript_include_tag "vendor/custom.modernizr"
+    = javascript_include_tag "custom.modernizr"
     = csrf_meta_tag
 
   %body
     = render 'layouts/header'
     = toastr_flash
 
-    = yield
+    .row
+      // sidebar
+      .large-3.columns
+        .panel
+          %a{href: "#"}
+            %img{src: "http://placehold.it/300x240&text=[img]"}/
+          %h5
+            %a{href: "#"} Joe User
+          .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
+            %section.section
+              %h5.title
+                %a{href: "#"} My Dashboard
+            %section.section
+              %h5.title
+                %a{href: "#"} My Observations
+            %section.section
+              %h5.title
+                %a{href: "#"} Photos
+            %section.section
+              %h5.title
+                %a{href: "#"} Following
+            %section.section
+              %h5.title
+                %a{href: "#"} Chat
+
+
+      = yield
+
+    = render 'layouts/footer'
 
     = javascript_include_tag "application"

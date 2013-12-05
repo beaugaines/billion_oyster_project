@@ -12,26 +12,26 @@
 	"buffers":
 	[
 		{
-			"file": "app/helpers/application_helper.rb",
+			"file": "app/views/admin/dashboards/show.html.haml",
 			"settings":
 			{
-				"buffer_size": 476,
+				"buffer_size": 34,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/application.html.haml",
+			"file": "spec/features/accounts_spec.rb",
 			"settings":
 			{
-				"buffer_size": 453,
+				"buffer_size": 616,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/_header.html.haml",
+			"file": "spec/support/user_helper.rb",
 			"settings":
 			{
-				"buffer_size": 764,
+				"buffer_size": 234,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,21 +80,32 @@
 	},
 	"file_history":
 	[
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/_header.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/features/admin_dashboard_spec.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/config/routes.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/application.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin/base_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/welcome_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/application_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/admin/dashboard/show.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/dashboards_controller.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/admin/dashboards_controller.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/dashboards/show.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/features/user_signin_spec.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131204202759_add_admin_to_users.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/factories/users.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/welcome.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/Gemfile",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/helpers/application_helper.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/application.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/_header.html.haml",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/spec_helper.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/spec/support/user_helper.rb",
+		"/home/sircharles/rails_projects/new_bill_oyst/config/application.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/sidebar.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/assets/stylesheets/layout.sass",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/registrations/new.html.haml",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/models/dashboard.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/devise/sessions/new.html.haml",
-		"/home/sircharles/rails_projects/new_bill_oyst/config/application.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/views/welcome/index.html.haml",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/views/layouts/welcome.html.haml",
-		"/home/sircharles/rails_projects/new_bill_oyst/app/controllers/welcome_controller.rb",
-		"/home/sircharles/rails_projects/new_bill_oyst/Gemfile",
 		"/home/sircharles/rails_projects/new_bill_oyst/db/migrate/20131203162603_enable_uuid_ossp_extension.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/app/models/user.rb",
 		"/home/sircharles/rails_projects/new_bill_oyst/db/schema.rb",
@@ -196,18 +207,7 @@
 		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/db/seeds.rb",
 		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/assets/javascripts/application.js",
 		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/Gemfile",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/views/products/index.html.erb",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/controllers/products_controller.rb",
-		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/models/product.rb",
-		"/home/sircharles/rails_projects/fashion_cohort/app/assets/stylesheets/application.scss",
-		"/home/sircharles/rails_projects/fashion_cohort/app/views/pages/welcome.html.haml",
-		"/home/sircharles/rails_projects/fashion_cohort/app/views/layouts/_header.html.haml",
-		"/home/sircharles/rails_projects/fashion_cohort/app/views/layouts/application.html.haml",
-		"/home/sircharles/rails_projects/fashion_cohort/app/assets/stylesheets/foundation_and_overrides.scss",
-		"/home/sircharles/rails_projects/fashion_cohort/app/views/pages/index.html.haml",
-		"/home/sircharles/rails_projects/fashion_cohort/config/routes.rb",
-		"/home/sircharles/rails_projects/fashion_cohort/app/controllers/pages_controller.rb",
-		"/home/sircharles/rails_projects/fashion_cohort/app/controllers/omniauth_callbacks_controller.rb"
+		"/home/sircharles/rails_projects/RCasts/autocomplete_search_terms/app/views/products/index.html.erb"
 	],
 	"find":
 	{
@@ -253,18 +253,44 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/helpers/application_helper.rb",
+					"file": "app/views/admin/dashboards/show.html.haml",
 					"settings":
 					{
-						"buffer_size": 476,
+						"buffer_size": 34,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								471,
-								471
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "spec/features/accounts_spec.rb",
+					"settings":
+					{
+						"buffer_size": 616,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								599,
+								599
 							]
 						],
 						"settings":
@@ -280,54 +306,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/views/layouts/application.html.haml",
-					"settings":
-					{
-						"buffer_size": 453,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								365,
-								365
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 2,
-					"file": "app/views/layouts/_header.html.haml",
+					"file": "spec/support/user_helper.rb",
 					"settings":
 					{
-						"buffer_size": 764,
+						"buffer_size": 234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								711,
-								711
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Haml/Syntaxes/Ruby Haml.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -388,6 +384,66 @@
 		"selected_items":
 		[
 			[
+				"appcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"base",
+				"app/controllers/admin/base_controller.rb"
+			],
+			[
+				"wel",
+				"app/controllers/welcome_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"user",
+				"spec/support/user_helper.rb"
+			],
+			[
+				"show",
+				"app/views/admin/dashboards/show.html.haml"
+			],
+			[
+				"admin",
+				"spec/features/admin_dashboard_spec.rb"
+			],
+			[
+				"dash",
+				"app/controllers/dashboards_controller.rb"
+			],
+			[
+				"admi",
+				"db/migrate/20131204202759_add_admin_to_users.rb"
+			],
+			[
+				"welcom",
+				"app/views/layouts/welcome.html.haml"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"users",
+				"spec/factories/users.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"spechel",
+				"spec/spec_helper.rb"
+			],
+			[
+				"apprb",
+				"config/application.rb"
+			],
+			[
 				"_head",
 				"app/views/layouts/_header.html.haml"
 			],
@@ -400,10 +456,6 @@
 				"app/views/sidebar.html.haml"
 			],
 			[
-				"rout",
-				"config/routes.rb"
-			],
-			[
 				"dashcon",
 				"app/controllers/dashboards_controller.rb"
 			],
@@ -412,28 +464,12 @@
 				"app/helpers/application_helper.rb"
 			],
 			[
-				"route",
-				"config/routes.rb"
-			],
-			[
-				"apprb",
-				"config/application.rb"
-			],
-			[
 				"new",
 				"app/views/devise/sessions/new.html.haml"
 			],
 			[
-				"welcom",
-				"app/views/layouts/welcome.html.haml"
-			],
-			[
 				"appham",
 				"app/views/layouts/application.html.haml"
-			],
-			[
-				"wel",
-				"app/controllers/welcome_controller.rb"
 			],
 			[
 				"lay",
@@ -448,10 +484,6 @@
 				"app/assets/stylesheets/application.css"
 			],
 			[
-				"user",
-				"app/models/user.rb"
-			],
-			[
 				"mig",
 				"db/migrate/20131203164829_devise_create_users.rb"
 			],
@@ -462,10 +494,6 @@
 			[
 				"enab",
 				"db/migrate/20131203162603_enable_uuid_ossp_extension.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"arr",
