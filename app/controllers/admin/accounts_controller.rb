@@ -6,6 +6,7 @@ class Admin::AccountsController < AdminController
   
   def new
     @account = Account.new
+    @users = User.where.not(id: current_user.id)
   end
 
   def create

@@ -7,4 +7,6 @@ class User < ActiveRecord::Base
 
   scope :first, -> { order('created_at DESC').first }
   scope :last, -> { order('created_at DESC').last }
+
+  has_one :account
 end
