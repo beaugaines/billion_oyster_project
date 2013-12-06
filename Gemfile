@@ -27,6 +27,7 @@ gem 'simple_form'
 # gmaps
 gem 'gmaps4rails'
 gem 'geocoder'
+gem 'underscore-rails'
 
 # authorization
 gem 'pundit'
