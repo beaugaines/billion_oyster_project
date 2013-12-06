@@ -1,6 +1,6 @@
 # geocomplete addresses
 
-$ ->
+jQuery ->
   $('input#geocomplete').geocomplete
 
     map: '.map_canvas'
