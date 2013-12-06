@@ -26,7 +26,7 @@ class Admin::AccountsController < AdminController
   private
 
   def account_params
-    params.require(:account).permit(:name, :city, :full_address, :lat, :lon, :book_id)
+    params.require(:account).permit(:name, :city, :full_address, :lat, :lon, :book_id, :user_id)
   end
   
 end
