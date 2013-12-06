@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 # core
-gem 'rails', '4.0.1'
+gem 'rails', '4.0.2'
 gem 'pg'
 gem 'turbolinks'
 gem 'devise'
@@ -20,6 +20,13 @@ gem 'haml-rails'
 
 # js flash
 gem 'toastr-rails'
+
+# forms
+gem 'simple_form'
+
+# gmaps
+gem 'gmaps4rails'
+gem 'geocoder'
 
 # authorization
 gem 'pundit'

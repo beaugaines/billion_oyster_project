@@ -25,6 +25,9 @@ module NewBillOyst
     # sass load assets from vendor
     config.sass.load_paths << File.expand_path('../../vendor/assets/stylesheets/')
 
+    # asset precompile setting for Heroku
+    config.assets.initialize_on_precompile = false
+
     # rspec generators
     config.generators do |g|
         g.test_framework :rspec,

@@ -1,0 +1,29 @@
+%form
+  %input#geocomplete{placeholder: "Type an address and hit enter", type: "text"}/
+  .map_canvas
+
+= simple_form_for [:admin, @account], url: admin_accounts_path do |f|
+  = f.input :name
+  = f.association :user, label_method: :email, value_method: :id
+  = f.input :city, as: :string, input_html: { data: { geo: 'locality' } }
+  = f.input :full_address, as: :string, input_html: { data: { geo: 'formatted_address' } }
+  = f.input :lat, as: :hidden, input_html: { data: { geo: 'lat' } }
+  = f.input :lon, as: :hidden, input_html: { data: { geo: 'lng' } }
+  = f.submit
+
+/ = form_for [:admin, @account], url: admin_accounts_path do |f|
+/   %div 
+/     = f.label :name
+/     %br/ 
+/     = f.text_field :name
+/   %div 
+/     = f.label :city
+/     %br/ 
+/     = f.text_field :city
+/   %div
+/     = f.label :user_id
+/     %br/
+/     = f.collection_select(:user_id, User.all, :id, :email)
+/   %div
+/     = f.submit 'Add new account', class: 'medium radius secondary button'
+

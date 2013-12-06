@@ -14,3 +14,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# sublime
+*.sublime*
+
+# zeus
+zeus.json
+custom_plan.rb
+# Ignore application configuration
+/config/application.yml
