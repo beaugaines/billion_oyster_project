@@ -26,6 +26,7 @@ gem 'simple_form'
 
 # gmaps
 gem 'gmaps4rails'
+gem 'geocoder'
 
 # authorization
 gem 'pundit'

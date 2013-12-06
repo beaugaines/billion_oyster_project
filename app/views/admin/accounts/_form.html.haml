@@ -5,7 +5,9 @@
 = simple_form_for [:admin, @account], url: admin_accounts_path do |f|
   = f.input :name
   = f.input :city
-  = f.association :user, label_method: :user_id, value_method: :id
+  = f.association :user, label_method: :email, value_method: :id
+  = f.input :lat, as: :hidden, input_html: { data: { geo: 'lat' } }
+  = f.input :lon, as: :hidden, input_html: { data: { geo: 'lng' } }
   = f.submit
 
 / = form_for [:admin, @account], url: admin_accounts_path do |f|
