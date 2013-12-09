@@ -8,6 +8,7 @@ gem 'rails', '4.0.2'
 gem 'pg'
 gem 'turbolinks'
 gem 'devise'
+gem 'devise_invitable'
 
 # styles, js, and templates
 gem 'sass-rails', '~> 4.0.0'
