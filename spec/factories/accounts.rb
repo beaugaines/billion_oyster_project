@@ -2,10 +2,10 @@
 
 FactoryGirl.define do
   factory :account do
-    name "MyString"
-    city "MyString"
-    lat "9.99"
-    lon "9.99"
-    user nil
+    name "Harbor school"
+    city "New York"
+    lat 48.855982
+    lon 2.358463
+    user
   end
 end

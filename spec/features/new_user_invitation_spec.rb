@@ -16,9 +16,8 @@ feature 'New user invitation', %q{
     login(@admin)
     click_link 'Manage Accounts'
     click_link 'Invite new user'
-    fill_in 'Name', with: 'Harbor School'
-    fill_in 'City', with: 'New York'
-    puts page.html
+    fill_in 'Name', with: 'Joe User'
+    fill_in 'City'd, with: 'New York'
     select 'Coordinator', with: 'Bob Bossman'
     click_button 'Create account'
     expect(page).to have_content('Account successfully creted')
