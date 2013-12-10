@@ -11,6 +11,7 @@ FactoryGirl.define do
       admin true
     end
     trait :moderator do
+      email "moderator@bop.com"
       moderator true
     end
   end

@@ -4,7 +4,7 @@
 
 = simple_form_for [:admin, @account], url: admin_accounts_path do |f|
   = f.input :name
-  = f.association :user, label_method: :email, value_method: :id
+  = f.association :user, label: 'Account Moderator', label_method: :email, value_method: :id
   = f.input :city, as: :string, input_html: { data: { geo: 'locality' } }
   = f.input :full_address, as: :string, input_html: { data: { geo: 'formatted_address' } }
   = f.input :lat, as: :hidden, input_html: { data: { geo: 'lat' } }
