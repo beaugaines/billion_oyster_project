@@ -17,5 +17,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def after_invite_path_for resource
+    accept_user_invitation_path
+  end
+  
+
 end
 
