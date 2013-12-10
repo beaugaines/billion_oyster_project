@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'is moderator' do
+    user = create(:user, :moderator)
+    expect(user.moderator?).to be_true
+  end
 end

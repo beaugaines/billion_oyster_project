@@ -11,7 +11,7 @@ FactoryGirl.define do
       admin true
     end
     trait :moderator do
-      role 'moderator'
+      moderator true
     end
   end
 end
