@@ -18,9 +18,9 @@ feature 'New account creation', %q{
     click_link 'Add new account'
     fill_in 'Name', with: 'Harbor School'
     fill_in 'City', with: 'New York'
-    select 'Account Moderator', with: 'Bob Bossman'
-    click_button 'Create account'
-    expect(page).to have_content('Account successfully created')
+    select 'moderator@bop.com', from: 'Account Moderator'
+    click_button 'Create Account'
+    expect(Account.first.name).to eql('Harbor School')
   end
 
 end
