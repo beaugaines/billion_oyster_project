@@ -9,7 +9,7 @@ feature 'New user invitation', %q{
 
   before do
     @admin = create(:user, :admin)
-    @user = create(:user)
+    @account = create(:account)
   end
 
   scenario 'add a new school account' do
@@ -17,8 +17,8 @@ feature 'New user invitation', %q{
     click_link 'Manage Accounts'
     click_link 'Invite new user'
     fill_in 'Name', with: 'Joe User'
-    fill_in 'City'd, with: 'New York'
-    select 'Coordinator', with: 'Bob Bossman'
+    select 'Harbor School', from 
+
     click_button 'Create account'
     expect(page).to have_content('Account successfully creted')
   end

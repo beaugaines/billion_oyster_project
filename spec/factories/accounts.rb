@@ -6,6 +6,6 @@ FactoryGirl.define do
     city "New York"
     lat 48.855982
     lon 2.358463
-    user
+    association :user, factory: [:user, :moderator]
   end
 end
