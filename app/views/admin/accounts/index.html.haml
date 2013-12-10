@@ -1,6 +1,7 @@
 %h3 Accounts
 
-= link_to 'Add new account', new_admin_account_path
+%p= link_to 'Add new account', new_admin_account_path
+%p= link_to 'Invite new moderator', new_user_invitation_path
 
 - @accounts.each do |account|
   %p= account.name
