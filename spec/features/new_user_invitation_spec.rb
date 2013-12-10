@@ -15,10 +15,10 @@ feature 'New user invitation', %q{
   scenario 'add a new school account' do
     login(@admin)
     click_link 'Manage Accounts'
-    click_link 'Invite new user'
-    fill_in 'Name', with: 'Joe User'
-    select 'Harbor School', from 
-
+    click_link 'Invite new moderator'
+    fill_in 'Name', with: 'Joe Moderator'
+    fill_in 'Email', with: 'moderator@ps35.com'
+    select 'Harbor School', from: 'Account'
     click_button 'Create account'
     expect(page).to have_content('Account successfully creted')
   end
