@@ -55,8 +55,8 @@ ActiveRecord::Schema.define(version: 20131210034809) do
     t.integer  "invited_by_id"
     t.string   "invited_by_type"
     t.boolean  "moderator",              default: false
-    t.string   "first_name",                             null: false
-    t.string   "last_name",                              null: false
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
