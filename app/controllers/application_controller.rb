@@ -23,7 +23,7 @@ class ApplicationController < ActionController::Base
     accept_user_invitation_path
   end
 
-  def configure_permitter_parameters
+  def configure_permitted_parameters
     devise_parameter_sanitizer.for(:accept_invitation) do |u|
       u.permit(:first_name, :last_name, :password, :password_confirmation,
                :invitation_token, :moderator)
