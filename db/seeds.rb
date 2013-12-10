@@ -6,11 +6,12 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+u = User.new(first_name: 'Guy', last_name: 'User', email: 'user@bop.com', password: ENV['USER_PASSWORD'], password_confirmation: ENV['USER_PASSWORD'])
+a = User.new(first_name: 'Admin', last_name: 'User', email: 'admin@bop.com', password: ENV['ADMIN_PASSWORD'], password_confirmation: ENV['ADMIN_PASSWORD'])
 
-u = User.new(email: 'user@bop.com', password: ENV['USER_PASSWORD'], password_confirmation: ENV['USER_PASSWORD'])
-a = User.new(email: 'admin@bop.com', password: ENV['ADMIN_PASSWORD'], password_confirmation: ENV['ADMIN_PASSWORD'])
+users = [u, a]
 
-%w(u a).each do |account|
+users.each do |account|
   account.skip_confirmation!
   account.save
 end
