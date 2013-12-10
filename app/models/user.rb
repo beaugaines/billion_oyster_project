@@ -7,5 +7,8 @@ class User < ActiveRecord::Base
   scope :first, -> { order('created_at ASC').first }
   scope :last, -> { order('created_at ASC').last }
 
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+
   has_one :account
 end
