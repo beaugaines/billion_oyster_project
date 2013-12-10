@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
   protected
 
   def authorize_admin!
@@ -20,6 +22,14 @@ class ApplicationController < ActionController::Base
   def after_invite_path_for resource
     accept_user_invitation_path
   end
+
+  def configure_permitter_parameters
+    devise_parameter_sanitizer.for(:accept_invitation) do |u|
+      u.permit(:first_name, :last_name, :password, :password_confirmation,
+               :invitation_token, :moderator)
+    end
+  end
+  
   
 
 end
