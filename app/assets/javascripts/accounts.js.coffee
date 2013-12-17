@@ -1,9 +1,7 @@
 # geocomplete addresses
 
 jQuery ->
-  $('input#geocomplete').geocomplete
-
-    map: '.map_canvas'
+  $('#geocomplete').geocomplete
     details: 'form'
     detailsAttribute: 'data-geo'
 

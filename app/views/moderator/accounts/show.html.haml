@@ -1,0 +1,10 @@
+.large-9.columns
+  %h2 School Account
+  .panel
+    %p= @account.name
+    %p= @account.city
+  %h2 Moderator:
+  .panel
+    %p= image_tag(@account.owner_gravatar)
+    %p= @account.owner_name
+    %p= @account.owner_email

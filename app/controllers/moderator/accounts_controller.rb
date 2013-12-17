@@ -1,4 +1,4 @@
-class Admin::AccountsController < AdminController
+class Moderator::AccountsController < ApplicationController
 
   def index
     @accounts = Account.all
@@ -6,13 +6,12 @@ class Admin::AccountsController < AdminController
   
   def new
     @account = Account.new
-    @users = User.where.not(id: current_user.id)
   end
 
   def create
-    @account = Account.new(account_params)
+    @account = Account.new(account_params.merge!(user_id: current_user.id))
     if @account.save
-      redirect_to [:admin, @account], notice: 'Account created'
+      redirect_to [:moderator, @account], notice: 'Account created'
     else
       render :new, alert: 'Account creation failed'
     end

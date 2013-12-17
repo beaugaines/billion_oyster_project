@@ -21,7 +21,7 @@ feature 'Admin dashboard', %q{
     expect(current_path).to eql admin_dashboard_path
   end
 
-  scenario 'non-admin user cannot access admin dashboard', focus: true do
+  scenario 'non-admin user cannot access admin dashboard' do
     @user = create(:user)
     visit root_path
     click_link 'Sign in'
