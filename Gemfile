@@ -27,7 +27,7 @@ gem 'simple_form'
 
 # image upload
 gem 'carrierwave'
-
+gem 'cloudinary'
 
 # gmaps
 gem 'gmaps4rails'
