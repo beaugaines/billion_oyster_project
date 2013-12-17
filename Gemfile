@@ -25,6 +25,10 @@ gem 'toastr-rails'
 # forms
 gem 'simple_form'
 
+# image upload
+gem 'carrierwave'
+
+
 # gmaps
 gem 'gmaps4rails'
 gem 'geocoder'
@@ -41,7 +45,6 @@ gem 'figaro'
 
 # asset handling for Heroku
 gem 'rails_12factor'
-
 
 group :development do
   gem 'pry-rails'

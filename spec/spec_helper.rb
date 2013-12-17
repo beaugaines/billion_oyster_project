@@ -5,6 +5,7 @@ require 'rspec/rails'
 require 'rspec/autorun'
 require 'capybara/rspec'
 require 'should_not/rspec'
+require 'paperclip/matchers'
 
 
 # Requires supporting ruby files with custom matchers and macros, etc,
@@ -19,6 +20,7 @@ RSpec.configure do |config|
 
   # helpers 
   config.include FactoryGirl::Syntax::Methods
+  config.include Paperclip::Shoulda::Matchers
   config.include Devise::TestHelpers, :type => :controller
   config.include UserHelper
 
