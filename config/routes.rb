@@ -10,6 +10,7 @@ NewBillOyst::Application.routes.draw do
     resources :accounts
   end
 
+  resources :posts
 
   get 'chat', to: 'chat#show', as: 'chat'
 

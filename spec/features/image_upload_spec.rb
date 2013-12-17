@@ -12,13 +12,13 @@ feature 'Image upload', %q{
     @user = create(:user)
   end
 
-  scenario 'user uploads new image' do
+  scenario 'user uploads new image', focus: true do
     login(@user)
     click_link 'My Posts'
     click_link 'Add new post'
     fill_in 'Title', with: 'My darling oysters!'
     fill_in 'Comment', with: 'They grow so fast!'
-    
+
   end
 
 end

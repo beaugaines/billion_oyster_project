@@ -26,8 +26,9 @@ gem 'toastr-rails'
 gem 'simple_form'
 
 # image upload
-gem 'carrierwave'
-gem 'cloudinary'
+# gem 'carrierwave'
+# gem 'cloudinary'
+gem 'attachinary', git: 'git://github.com/rochers/attachinary.git', branch: 'rails4'
 
 # gmaps
 gem 'gmaps4rails'
