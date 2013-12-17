@@ -10,7 +10,7 @@ feature 'User signin', %q{
 
   before do
     @user = create(:user)
-    @school = create(:school)
+    @account = create(:account)
   end
 
   scenario 'signin and redirect to school dashboard' do
@@ -19,7 +19,7 @@ feature 'User signin', %q{
     fill_in 'Email', with: @user.email, match: :prefer_exact
     fill_in 'Password', with: @user.password, match: :prefer_exact
     click_button 'Sign in'
-    expect(current_path).to eql authenticated_root_path
+    expect(current_path).to eql dashboard_path
   end
 
 end

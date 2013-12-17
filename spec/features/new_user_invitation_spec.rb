@@ -12,15 +12,18 @@ feature 'New user invitation', %q{
     @account = create(:account)
   end
 
-  scenario 'add a new school account' do
+  scenario 'admin invites a new moderator', focus: true do
     login(@admin)
     click_link 'Manage Accounts'
     click_link 'Invite new moderator'
-    fill_in 'Name', with: 'Joe Moderator'
-    fill_in 'Email', with: 'moderator@ps35.com'
+    fill_in 'Email', with: 'moderator@bop.com'
     select 'Harbor School', from: 'Account'
-    click_button 'Create account'
-    expect(page).to have_content('Account successfully creted')
+    click_button 'Send an invitation'
+    expect(User.count).to eql(2)
+  end
+
+  scenario 'moderator invites a new student' do
+    pending
   end
 
 end
