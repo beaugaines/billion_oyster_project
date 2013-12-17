@@ -17,9 +17,9 @@ feature 'New user invitation', %q{
     click_link 'Manage Accounts'
     click_link 'Invite new moderator'
     fill_in 'Email', with: 'moderator@bop.com'
-    select 'Harbor School', from: 'Account'
     click_button 'Send an invitation'
-    expect(User.count).to eql(2)
+    p User.last
+    expect(User.last.invitation_token).not_to be_nil
   end
 
   scenario 'moderator invites a new student' do

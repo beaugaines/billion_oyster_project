@@ -1,5 +1,10 @@
 module ApplicationHelper
 
+  def admins_only(&block)
+    block.call if current_user.try(:admin?)
+  end
+  
+
   def toastr_flash
     flash_messages = []
     flash.each do |type, message|
