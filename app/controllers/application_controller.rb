@@ -20,18 +20,22 @@ class ApplicationController < ActionController::Base
   end
 
   def after_invite_path_for resource
-    accept_user_invitation_path
+    if current_user.moderator?
+      new_account_path
+    else
+      accept_user_invitation_path
+    end
   end
+
 
   def configure_permitted_parameters
     devise_parameter_sanitizer.for(:accept_invitation) do |u|
       u.permit(:first_name, :last_name, :password, :password_confirmation,
                :invitation_token, :moderator, :account_id,
-               account_attributes: [:])
+               account_attributes: [:name, :city, :full_address, :lat, :lon, ])
     end
   end
   
   
 
 end
-
