@@ -8,6 +8,11 @@ class Users::InvitationsController < Devise::InvitationsController
   def edit
     super
   end
-  
+
+  # private
+
+  # def update_resource_params
+  #   params.require(:user).permit(:password, :password_confirmation, :user, :name, :email)
+  # end
 
 end

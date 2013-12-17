@@ -11,7 +11,23 @@
 
     <%= f.input :password %>
     <%= f.input :password_confirmation %>
+    
+    <div class="panel">
+      <h3>School Details</h3>
+      <%= f.simple_fields_for :account do |account_form| %>
+        <%= account_form.input :name, label: 'School Name' %>
+        <label for="geocomplete">Type school address and hit enter:</label>
+        <input id="geocomplete" type="text" autocomplete="off">
+        <!-- <input type="button" id="find" value="find"> -->
+        <%= account_form.input :city, as: :string, input_html: { data: { geo: 'locality'}} %>
+        <%= account_form.input :full_address, as: :string, input_html: { data: { geo: 'formatted_address' } } %>
+        <%= account_form.input :lat, as: :hidden, input_html: { data: { geo: 'lat' } } %>
+        <%= account_form.input :lon, as: :hidden, input_html: { data: { geo: 'lng' } } %>
+      <% end %>
+    </div>
+
 
     <%= f.submit t("devise.invitations.edit.submit_button"), class: 'small radius button' %>
   <% end %>
 </div>
+

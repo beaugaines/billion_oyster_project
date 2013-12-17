@@ -11,4 +11,6 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
 
   has_one :account
+
+  accepts_nested_attributes_for :account, allow_destroy: true
 end
