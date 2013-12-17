@@ -12,6 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require cloudinary/jquery.cloudinary
+//= require jquery.ui.widget
+//= require jquery.iframe-transport
+//= require jquery.fileupload
+//= require attachinary
 //= require foundation
 //= require underscore
 //= require gmaps/google

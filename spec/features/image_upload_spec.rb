@@ -18,6 +18,7 @@ feature 'Image upload', %q{
     click_link 'Add new post'
     fill_in 'Title', with: 'My darling oysters!'
     fill_in 'Comment', with: 'They grow so fast!'
+    
 
   end
 

@@ -41,9 +41,10 @@
               %h5.title
                 = link_to 'Chat', chat_path, data: { :'no-turbolink' => '' }
 
-
-      = yield
+      .large-9.columns
+        = yield
 
     = render 'layouts/footer'
 
     = javascript_include_tag "application"
+    = cloudinary_js_config

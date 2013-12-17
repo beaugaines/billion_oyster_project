@@ -11,6 +11,7 @@ NewBillOyst::Application.routes.draw do
   end
 
   resources :posts
+  mount Attachinary::Engine => '/attachinary'
 
   get 'chat', to: 'chat#show', as: 'chat'
 
