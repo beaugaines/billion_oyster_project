@@ -33,7 +33,7 @@
                 %a{href: "#"} My Observations
             %section.section
               %h5.title
-                %a{href: "#"} Photos
+                = link_to 'My Posts', posts_path
             %section.section
               %h5.title
                 %a{href: "#"} Following
@@ -41,9 +41,10 @@
               %h5.title
                 = link_to 'Chat', chat_path, data: { :'no-turbolink' => '' }
 
-
-      = yield
+      .large-9.columns
+        = yield
 
     = render 'layouts/footer'
 
     = javascript_include_tag "application"
+    = cloudinary_js_config

@@ -6,7 +6,6 @@ require 'rspec/autorun'
 require 'capybara/rspec'
 require 'should_not/rspec'
 
-
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
 Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
@@ -50,6 +49,5 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
-
 
 end
