@@ -10,6 +10,9 @@ NewBillOyst::Application.routes.draw do
     resources :accounts
   end
 
+
+  get 'chat', to: 'chat#show', as: 'chat'
+
   resource :dashboard, only: [:show] 
 
   root to: 'welcome#index'
