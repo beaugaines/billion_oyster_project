@@ -12,7 +12,7 @@ feature 'New user invitation', %q{
     @account = create(:account)
   end
 
-  scenario 'admin invites a new moderator', focus: true do
+  scenario 'admin invites a new moderator' do
     login(@admin)
     click_link 'Manage Accounts'
     click_link 'Invite new moderator'

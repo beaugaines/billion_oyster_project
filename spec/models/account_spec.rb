@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe Account do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'has a valid factory' do
+    a = create(:account)
+    expect(a).to be_valid
+  end
 end
