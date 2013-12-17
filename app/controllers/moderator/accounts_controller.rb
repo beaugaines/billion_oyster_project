@@ -11,7 +11,7 @@ class Moderator::AccountsController < ApplicationController
   def create
     @account = Account.new(account_params.merge!(user_id: current_user.id))
     if @account.save
-      redirect_to [:admin, @account], notice: 'Account created'
+      redirect_to [:moderator, @account], notice: 'Account created'
     else
       render :new, alert: 'Account creation failed'
     end
