@@ -1,3 +1,9 @@
 %h3 Recent posts
 
+- @posts.each do |post|
+  %p= post.title 
+  %p= post.caption
+  - post.photos.each do |photo|
+    %p= cl_image_tag(photo.path, { size: '400x400', crop: :fit} ) 
+
 = link_to 'Add new post', new_post_path
