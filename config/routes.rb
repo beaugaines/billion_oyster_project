@@ -5,7 +5,7 @@ NewBillOyst::Application.routes.draw do
     resource :dashboard, only: [:show]
   end
 
-  namespace :moderators do
+  namespace :moderator do
     resources :accounts
   end
 
