@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410190959) do
+ActiveRecord::Schema.define(version: 20140410191657) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,12 +54,12 @@ ActiveRecord::Schema.define(version: 20140410190959) do
   end
 
   create_table "users", id: :uuid, default: "uuid_generate_v4()", force: true do |t|
-    t.string   "email",                  default: "",    null: false
-    t.string   "encrypted_password",     default: ""
+    t.string   "email",                                           default: "",    null: false
+    t.string   "encrypted_password",                              default: ""
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,     null: false
+    t.integer  "sign_in_count",                                   default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
@@ -70,7 +70,7 @@ ActiveRecord::Schema.define(version: 20140410190959) do
     t.string   "unconfirmed_email"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "admin",                  default: false
+    t.boolean  "admin",                                           default: false
     t.string   "invitation_token"
     t.datetime "invitation_created_at"
     t.datetime "invitation_sent_at"
@@ -78,10 +78,13 @@ ActiveRecord::Schema.define(version: 20140410190959) do
     t.integer  "invitation_limit"
     t.integer  "invited_by_id"
     t.string   "invited_by_type"
-    t.boolean  "moderator",              default: false
+    t.boolean  "moderator",                                       default: false
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "avatar",                 default: "",    null: false
+    t.string   "avatar",                                          default: "",    null: false
+    t.string   "city",                                            default: "",    null: false
+    t.decimal  "lat",                    precision: 10, scale: 6, default: 40.67, null: false
+    t.decimal  "lon",                    precision: 10, scale: 6, default: 73.94, null: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
