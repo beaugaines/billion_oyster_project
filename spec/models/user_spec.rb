@@ -21,4 +21,11 @@ describe User do
     user = create(:user, :moderator)
     expect(user.moderator?).to be_true
   end
+
+  describe 'User#full_name' do
+    it 'yields the correct full name' do
+      u = create(:user)
+      expect(u.full_name).to eql('bob#1 dobbs')
+    end
+  end
 end
