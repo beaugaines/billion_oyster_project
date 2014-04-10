@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 # ruby version - make Heroku happy
-ruby '2.0.0'
+ruby '2.1.1'
 
 # core
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.3'
 gem 'pg'
 gem 'turbolinks'
 gem 'devise'
@@ -33,6 +33,9 @@ gem 'attachinary', git: 'git://github.com/rochers/attachinary.git', branch: 'rai
 gem 'gmaps4rails'
 gem 'geocoder'
 gem 'underscore-rails'
+
+# no swearing
+gem 'profanity_filter'
 
 # authorization
 gem 'pundit'
@@ -65,7 +68,6 @@ group :development, :test do
   gem 'capybara'
   gem 'capybara-webkit'
   gem 'should_not'
-  gem 'ffaker'
 end
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
