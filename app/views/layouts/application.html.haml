@@ -21,19 +21,25 @@
       .large-3.columns
         .panel
           %a{href: "#"}
-            %img{src: "http://placehold.it/300x240&text=[img]"}/
+            / %img{src: "http://placehold.it/300x240&text=[img]"}/
+
+            = image_tag current_user.gravatar_url
           %h5
             %a{href: "#"} Joe User
           .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
             %section.section
               %h5.title
-                %a{href: "#"} My Dashboard
+                %a{href: "#"} Dashboard
             %section.section
               %h5.title
                 %a{href: "#"} My Observations
             %section.section
               %h5.title
                 = link_to 'My Posts', posts_path
+            %section.section
+              %h5.title
+                / %a{href: "#"} My Profile
+                = link_to 'My Profile', edit_user_registration_path
             %section.section
               %h5.title
                 %a{href: "#"} Following

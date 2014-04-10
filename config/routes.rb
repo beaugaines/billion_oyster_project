@@ -17,5 +17,9 @@ NewBillOyst::Application.routes.draw do
 
   resource :dashboard, only: [:show] 
 
+  authenticated :user do
+    root to: 'dashboard#show', as: :authenticated_root
+  end
+
   root to: 'welcome#index'
 end

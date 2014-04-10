@@ -69,6 +69,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'capybara-webkit'
+  gem 'simplecov', require: false
   gem 'should_not'
 end
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
