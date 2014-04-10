@@ -7,7 +7,7 @@ FactoryGirl.define do
     last_name "dobbs"
     password "password"
     password_confirmation "password"
-    confirmed_at Time.now
+    # confirmed_at Time.now
     trait :admin do
       email "admin@bop.com"
       admin true

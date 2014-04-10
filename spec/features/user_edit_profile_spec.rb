@@ -9,6 +9,7 @@ feature 'Edit profile', %q{
 
   before do
     @user = create(:user)
+    @user.skip_confirmation!
   end
 
   scenario 'user visits their profile' do

@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
              default: :monsterid,
              rating: 'G'
 
+  has_attachment :avatar, accept: [:jpg, :png, :gif]
+
   devise :invitable, :database_authenticatable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
 
