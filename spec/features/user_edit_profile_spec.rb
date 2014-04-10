@@ -18,7 +18,7 @@ feature 'Edit profile', %q{
     within('body') { expect(page).to have_content('User settings for bob#1 dobbs') }
   end
 
-  scenario 'user changes their email', focus: true do
+  scenario 'user changes their email' do
     login(@user)
     click_link 'My Profile'
     click_link 'Edit Profile'

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410195851) do
+ActiveRecord::Schema.define(version: 20140410215956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,17 @@ ActiveRecord::Schema.define(version: 20140410195851) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "sites", force: true do |t|
+    t.string   "name"
+    t.integer  "account_id"
+    t.decimal  "lat",        precision: 10, scale: 6, default: 0.0, null: false
+    t.decimal  "lon",        precision: 10, scale: 6, default: 0.0, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sites", ["account_id"], name: "index_sites_on_account_id", using: :btree
 
   create_table "users", id: :uuid, default: "uuid_generate_v4()", force: true do |t|
     t.string   "email",                                           default: "",    null: false

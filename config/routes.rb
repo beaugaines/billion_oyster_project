@@ -1,7 +1,9 @@
 NewBillOyst::Application.routes.draw do
   devise_for :users, controllers: { invitations: 'users/invitations'}
 
-  resources :users, only: [:show, :edit, :update]
+  resources :users, only: [:show, :edit, :update] do
+    resources :observations
+  end
 
   namespace :admin do
     resource :dashboard, only: [:show]

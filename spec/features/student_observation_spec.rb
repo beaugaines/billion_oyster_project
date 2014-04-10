@@ -13,10 +13,10 @@ feature 'Student observation spec', %q{
     @user.update_attribute(:account, @account)
   end
 
-  scenario 'student' do
-    login(@admin)
-    click_link 'Manage Accounts'
-    click_link 'Add new account'
+  scenario 'student logs basic observations from the field', focus: true do
+    login(@user)
+    click_link 'My Observations'
+    click_link 'New Observation'
     fill_in 'Name', with: 'Harbor School'
     fill_in 'City', with: 'New York'
     select 'moderator@bop.com', from: 'Account Moderator'
