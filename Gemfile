@@ -28,6 +28,9 @@ gem 'entypo-rails'
 # forms
 gem 'simple_form'
 
+# my id, my friend
+gem 'friendly_id'
+
 # image upload
 gem 'cloudinary'
 gem 'attachinary', git: 'git://github.com/rochers/attachinary.git', branch: 'rails4'

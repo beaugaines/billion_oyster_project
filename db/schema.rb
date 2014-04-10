@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410191657) do
+ActiveRecord::Schema.define(version: 20140410195851) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,15 +81,16 @@ ActiveRecord::Schema.define(version: 20140410191657) do
     t.boolean  "moderator",                                       default: false
     t.string   "first_name"
     t.string   "last_name"
-    t.string   "avatar",                                          default: "",    null: false
     t.string   "city",                                            default: "",    null: false
     t.decimal  "lat",                    precision: 10, scale: 6, default: 40.67, null: false
     t.decimal  "lon",                    precision: 10, scale: 6, default: 73.94, null: false
+    t.string   "slug"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: true, using: :btree
   add_index "users", ["invited_by_id"], name: "index_users_on_invited_by_id", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["slug"], name: "index_users_on_slug", using: :btree
 
 end

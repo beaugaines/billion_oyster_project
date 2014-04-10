@@ -9,8 +9,13 @@
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "custom.modernizr"
+    = javascript_include_tag "application"
+    = cloudinary_js_config
     %script{src: "http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"}
+    %script{src: "//google-maps-utility-library-v3.googlecode.com/svn/tags/markerclustererplus/2.0.14/src/markerclusterer_packed.js", type: "text/javascript"}
+
     = csrf_meta_tag
+
 
   %body
     = render 'layouts/header'
@@ -51,5 +56,3 @@
 
     = render 'layouts/footer'
 
-    = javascript_include_tag "application"
-    = cloudinary_js_config

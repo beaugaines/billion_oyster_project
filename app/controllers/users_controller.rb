@@ -31,7 +31,7 @@ class UsersController < ApplicationController
   end
 
   def user
-    @user ||= User.find(params[:id])
+    @user ||= User.friendly.find(params[:id])
   end
 
   helper_method :user
