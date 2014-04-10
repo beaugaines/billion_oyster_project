@@ -24,3 +24,6 @@ custom_plan.rb
 
 # Ignore application configuration
 /config/application.yml
+
+# simplecov
+coverage/
