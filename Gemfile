@@ -22,6 +22,9 @@ gem 'haml-rails'
 # js flash
 gem 'toastr-rails'
 
+# icon font
+gem 'entypo-rails'
+
 # forms
 gem 'simple_form'
 
