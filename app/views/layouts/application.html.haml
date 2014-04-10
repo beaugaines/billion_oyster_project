@@ -20,10 +20,7 @@
       // sidebar
       .large-3.columns
         .panel
-          %a{href: "#"}
-            / %img{src: "http://placehold.it/300x240&text=[img]"}/
-
-            = image_tag current_user.gravatar_url
+          = image_tag current_user.gravatar_url
           %h5
             %a{href: "#"} Joe User
           .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
@@ -38,8 +35,7 @@
                 = link_to 'My Posts', posts_path
             %section.section
               %h5.title
-                / %a{href: "#"} My Profile
-                = link_to 'My Profile', edit_user_registration_path
+                = link_to 'My Profile', user_path(current_user) 
             %section.section
               %h5.title
                 %a{href: "#"} Following

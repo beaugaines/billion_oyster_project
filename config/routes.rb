@@ -1,5 +1,7 @@
 NewBillOyst::Application.routes.draw do
   devise_for :users, controllers: { invitations: 'users/invitations'}
+
+  resources :users, only: [:show, :update]
   
   namespace :admin do
     resource :dashboard, only: [:show]
@@ -16,10 +18,6 @@ NewBillOyst::Application.routes.draw do
   get 'chat', to: 'chat#show', as: 'chat'
 
   resource :dashboard, only: [:show] 
-
-  authenticated :user do
-    root to: 'dashboard#show', as: :authenticated_root
-  end
 
   root to: 'welcome#index'
 end
