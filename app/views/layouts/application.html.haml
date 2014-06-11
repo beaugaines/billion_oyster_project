@@ -5,7 +5,7 @@
     
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-    %title= content_for?(:title) ? yield(:title) : "Untitled"
+    %title= content_for?(:title) ? yield(:title) : "Billion Oyster Project Student Portal"
 
     = stylesheet_link_tag "application"
     = javascript_include_tag "custom.modernizr"
@@ -16,14 +16,13 @@
 
     = csrf_meta_tag
 
-
   %body
     = render 'layouts/header'
     = toastr_flash
 
     .row
       // sidebar
-      .large-3.columns
+      .large-3.columns.show-for-large-up
         .panel
           = show_avatar_for(current_user)
           %h5
