@@ -1,0 +1,6 @@
+TODO:  remove title from Post model
+TODO:  change caption column to body
+TODO:  ajaxify post creation from dashboard
+TODO:  multi-photo attachment for new posts
+TODO:  like model
+TODO:  commenting
