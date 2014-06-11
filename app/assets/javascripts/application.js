@@ -11,13 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require cloudinary/jquery.cloudinary
 //= require jquery.ui.widget
 //= require jquery.iframe-transport
 //= require jquery.fileupload
 //= require attachinary
-//= require jquery.sidr
 //= require foundation
 //= require underscore
 //= require gmaps/google
