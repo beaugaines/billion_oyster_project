@@ -18,6 +18,7 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'foundation-rails'
 gem 'haml-rails'
+gem 'sidr-rails'
 
 # js flash
 gem 'toastr-rails'
