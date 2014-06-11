@@ -21,6 +21,7 @@ class User < ActiveRecord::Base
   validates :email, presence: true
 
   has_one :account
+  #has_many :observations
 
   accepts_nested_attributes_for :account, allow_destroy: true
 
