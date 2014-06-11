@@ -4,6 +4,15 @@ module ApplicationHelper
     block.call if current_user.try(:admin?)
   end
 
+  def show_avatar_for(user)
+    if user.avatar.present?
+      image ||= cl_image_tag(user.avatar.path, width: 100, height: 120)
+    else
+      image ||= image_tag user.gravatar_url
+    end
+    image
+  end
+
   def toastr_flash
     flash_messages = []
     flash.each do |type, message|

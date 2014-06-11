@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
   before_action :check_for_signed_in_user
 
   def index
-    render layout: 'welcome'
+    # render layout: 'welcome'
   end
 
   private

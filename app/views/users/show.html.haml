@@ -2,5 +2,12 @@
 
 %p= "User settings for #{@user.full_name}"
 
+%p
+  %strong Email:
+  = @user.email
+
+%p
+  %strong City:
+  = @user.city
 = link_to 'Edit Profile', edit_user_path(@user)
 
