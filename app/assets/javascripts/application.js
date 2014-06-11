@@ -17,6 +17,7 @@
 //= require jquery.iframe-transport
 //= require jquery.fileupload
 //= require attachinary
+//= require jquery.sidr
 //= require foundation
 //= require underscore
 //= require gmaps/google
