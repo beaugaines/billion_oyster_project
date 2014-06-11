@@ -19,9 +19,6 @@ gem 'jquery-turbolinks'
 gem 'foundation-rails'
 gem 'haml-rails'
 
-# decorators
-gem 'draper'
-
 # js flash
 gem 'toastr-rails'
 
