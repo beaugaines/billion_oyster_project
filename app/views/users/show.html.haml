@@ -8,6 +8,6 @@
 
 %p
   %strong City:
-  = @user.city
+  = @user.city.present? ? @user.city : "Unlisted"
 = link_to 'Edit Profile', edit_user_path(@user)
 
