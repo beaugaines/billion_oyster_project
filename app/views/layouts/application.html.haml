@@ -22,7 +22,8 @@
 
     .row
       // sidebar
-      .large-3.columns.show-for-large-up
+
+      .medium-3.columns.show-for-medium-up
         .panel
           = show_avatar_for(current_user)
           %h5
@@ -47,7 +48,7 @@
               %h5.title
                 = link_to 'Chat', chat_path, data: { :'no-turbolink' => '' }
 
-      .large-9.columns
+      .medium-9.columns
         = yield
 
     = render 'layouts/footer'
