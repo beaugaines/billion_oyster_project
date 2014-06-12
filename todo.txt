@@ -1,3 +1,4 @@
+TODO:  observation model and forms
 TODO:  remove title from Post model
 TODO:  change caption column to body
 TODO:  ajaxify post creation from dashboard
