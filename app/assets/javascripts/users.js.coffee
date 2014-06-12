@@ -1,0 +1,3 @@
+$ ->
+  $('.attachinary-input').attachinary()
+
