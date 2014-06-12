@@ -3,6 +3,9 @@ class Account < ActiveRecord::Base
   has_many :observations
   has_many :sites
 
+  extend FriendlyId
+  friendly_id :name, use: :slugged
+
   def owner_email
     user.email
   end
