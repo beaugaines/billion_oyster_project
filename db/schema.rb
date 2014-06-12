@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140612150350) do
+ActiveRecord::Schema.define(version: 20140612162322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20140612150350) do
     t.integer  "humidity",                                         null: false
     t.string   "sky_conditions",                                   null: false
     t.hstore   "recent_weather",                                   null: false
-    t.datetime "time_of_monitor",                                  null: false
+    t.datetime "date_and_time",                                    null: false
     t.decimal  "high_tide_level",          precision: 4, scale: 2, null: false
     t.string   "approx_tide_level",                                null: false
     t.hstore   "water_conditions",                                 null: false
