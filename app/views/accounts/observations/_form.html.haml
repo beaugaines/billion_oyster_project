@@ -23,6 +23,6 @@
       = recent_weather.input :three_day_ago_rainfall, label: 'Rainfall'
   %fieldset
     %h3 Time of Monitor
-    = f.input :recorded_at_date, as: :string, input_html: { class: 'datepicker' }
+    = f.input :recorded_at_date, as: :string, input_html: { class: 'datepicker' }, placeholder: 'e.g. 10/24/2014'
     = f.input :recorded_at_hour, collection: 0..24
     
