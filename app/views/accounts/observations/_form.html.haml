@@ -24,5 +24,5 @@
   %fieldset
     %h3 Time of Monitor
     = f.input :recorded_at_date, as: :string, input_html: { class: 'datepicker' }, placeholder: 'e.g. 10/24/2014'
-    = f.input :recorded_at_hour, collection: 0..24
+    = f.input :recorded_at_time, input_html: { class: 'timepicker' }
     

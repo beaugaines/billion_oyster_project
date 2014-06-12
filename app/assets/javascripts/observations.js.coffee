@@ -6,3 +6,5 @@ $ ->
     $(this).datepicker({
       dateFormat: 'yy-mm-dd'
     })
+
+  $('.timepicker').timepicker()
