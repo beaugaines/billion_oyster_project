@@ -4,5 +4,9 @@ class Users::ObservationsController < ApplicationController
     # @observations = current_user.observations
     render
   end
+
+  def new
+    @observation = Observation.new
+  end
   
 end

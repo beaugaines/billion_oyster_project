@@ -1,5 +1,6 @@
 class Account < ActiveRecord::Base
   belongs_to :user
+  has_many :observations
 
   def owner_email
     user.email
@@ -12,7 +13,4 @@ class Account < ActiveRecord::Base
   def owner_gravatar
     user.gravatar_url
   end
-  
-  
-  
 end

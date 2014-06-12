@@ -8,6 +8,7 @@ User
 Observation
 
   belongs_to :account
+  belongs_to :user
   has_many :images
 
   t.string :site_name
@@ -16,6 +17,8 @@ Observation
   t.integer :wind_speed
   t.integer :humidity
   t.string :sky_conditions
+
+  t.hstore :recent_weather
 
   # QUESTION: previous 3 days weather conditions - what will this look like?
 
