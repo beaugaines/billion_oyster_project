@@ -19,8 +19,9 @@ gem 'jquery-turbolinks'
 gem 'foundation-rails'
 gem 'haml-rails'
 
-# js flash
+# js candy
 gem 'toastr-rails'
+gem 'mmenu-rails'
 
 # icon font
 gem 'entypo-rails'

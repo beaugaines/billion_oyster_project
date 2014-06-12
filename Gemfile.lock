@@ -131,6 +131,7 @@ GEM
     mime-types (1.25.1)
     mini_portile (0.5.3)
     minitest (4.7.5)
+    mmenu-rails (0.0.2)
     multi_json (1.10.1)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -274,6 +275,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   meta_request
+  mmenu-rails
   pg
   profanity_filter
   pry-rails
