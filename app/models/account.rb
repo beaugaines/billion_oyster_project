@@ -1,6 +1,7 @@
 class Account < ActiveRecord::Base
   belongs_to :user
   has_many :observations
+  has_many :sites
 
   def owner_email
     user.email

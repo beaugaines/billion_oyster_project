@@ -7,6 +7,7 @@ class Users::ObservationsController < ApplicationController
 
   def new
     @observation = Observation.new
+    @site_names = current_user.account.
   end
   
 end

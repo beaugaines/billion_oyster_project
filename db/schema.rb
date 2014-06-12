@@ -48,28 +48,27 @@ ActiveRecord::Schema.define(version: 20140612143437) do
 
   create_table "observations", force: true do |t|
     t.integer  "account_id"
-    t.integer  "user_id"
-    t.string   "site_name",                null: false
-    t.integer  "wind_speed",               null: false
-    t.integer  "humidity",                 null: false
-    t.string   "sky_conditions",           null: false
-    t.hstore   "recent_weather",           null: false
-    t.datetime "time_of_monitor",          null: false
-    t.decimal  "high_tide_level",          null: false
-    t.string   "approx_tide_level",        null: false
-    t.hstore   "water_conditions",         null: false
-    t.hstore   "oyster_cage_conditions",   null: false
-    t.text     "land_conditions",          null: false
-    t.hstore   "oyster_survey",            null: false
-    t.hstore   "reef_associate_survey",    null: false
-    t.hstore   "water_quality_assessment", null: false
-    t.text     "general_observations",     null: false
+    t.string   "site_name",                                        null: false
+    t.integer  "wind_speed",                                       null: false
+    t.integer  "humidity",                                         null: false
+    t.string   "sky_conditions",                                   null: false
+    t.hstore   "recent_weather",                                   null: false
+    t.datetime "time_of_monitor",                                  null: false
+    t.decimal  "high_tide_level",          precision: 4, scale: 2, null: false
+    t.string   "approx_tide_level",                                null: false
+    t.hstore   "water_conditions",                                 null: false
+    t.hstore   "oyster_cage_conditions",                           null: false
+    t.text     "land_conditions",                                  null: false
+    t.hstore   "oyster_survey",                                    null: false
+    t.hstore   "reef_associate_survey",                            null: false
+    t.hstore   "water_quality_assessment",                         null: false
+    t.text     "general_observations",                             null: false
+    t.uuid     "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "observations", ["account_id"], name: "index_observations_on_account_id", using: :btree
-  add_index "observations", ["user_id"], name: "index_observations_on_user_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.string   "title"

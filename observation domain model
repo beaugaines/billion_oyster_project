@@ -65,3 +65,4 @@ Observation
   t.text :general_observations
 
 
+rg model Observation account:belongs_to user:references site_name:string wind_speed:integer humidity:integer sky_conditions:string recent_weather:hstore time_of_monitor:datetime high_tide_level:decimal approx_tide_level:string water_conditions:hstore oyster_cage_conditions:hstore land_conditions:text oyster_survey:hstore reef_associate_survey:hstore water_quality_assessment:hstore general_observations:text
