@@ -18,10 +18,11 @@
 //= require jquery.iframe-transport
 //= require jquery.fileupload
 //= require attachinary
-//= require foundation
 //= require underscore
 //= require gmaps/google
 //= require turbolinks
+//= require foundation
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
