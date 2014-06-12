@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   before_action :ensure_user, only: [:show, :edit, :update]
 
   def show
-    @user = UserDecorator.friendly.find(params[:id])
+    @user = User.friendly.find(params[:id])
   end
 
   def edit
