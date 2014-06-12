@@ -1,4 +1,24 @@
 = simple_form_for [@account, @observation] do |f|
-  = f.input(:site_name, collection: @site_names)
-  = f.input
-  
+  %fieldset 
+    = f.input(:site_name, collection: @site_names)
+    = f.input :wind_speed, placeholder: 'Approximate...'
+    = f.input :humidity
+    = f.input :sky_conditions
+  %fieldset 
+    %h3 Recent Weather Conditions
+    = f.simple_fields_for :recent_weather do |recent_weather|
+      %h5 One day ago
+      = recent_weather.input :one_day_ago_general, label: 'General', placeholder: 'E.g Mixed clouds, breezy, warm'
+      = recent_weather.input :one_day_ago_temperature, label: 'Temperature', placeholder: 'e.g. 75'
+      = recent_weather.input :one_day_ago_rainfall, label: 'Rainfall', placeholder: 'e.g. 3'
+
+      %h5 Two days ago
+      = recent_weather.input :two_day_ago_general, label: 'General'
+      = recent_weather.input :two_day_ago_temperature, label: 'Temperature'
+      = recent_weather.input :two_day_ago_rainfall, label: 'Rainfall'
+
+      %h5 Three days ago
+      = recent_weather.input :three_day_ago_general, label: 'General'
+      = recent_weather.input :three_day_ago_temperature, label: 'Temperature'
+      = recent_weather.input :three_day_ago_rainfall, label: 'Rainfall'
+    
