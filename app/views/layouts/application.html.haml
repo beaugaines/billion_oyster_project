@@ -29,7 +29,7 @@
           .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
             %section.section
               %h5.title
-                %a{href: "#"} Dashboard
+                %a{href: "/"} Dashboard
             %section.section
               %h5.title
               = link_to 'My Observations', user_observations_path(current_user)
@@ -45,7 +45,6 @@
             %section.section
               %h5.title
                 = link_to 'Chat', chat_path, data: { :'no-turbolink' => '' }
-
 
 
       .small-12.medium-9.columns
