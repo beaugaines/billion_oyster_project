@@ -15,6 +15,7 @@
 //= require jquery_ujs
 //= require jquery.ui.widget
 //= require jquery.ui.datepicker
+//= require jquery.timepicker.js
 //= require jquery.iframe-transport
 //= require jquery.fileupload
 //= require attachinary
