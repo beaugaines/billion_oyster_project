@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'foundation-rails'
+gem 'foundation-datetimepicker-rails'
 gem 'haml-rails'
 
 # js candy
