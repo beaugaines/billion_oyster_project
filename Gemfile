@@ -19,8 +19,9 @@ gem 'jquery-turbolinks'
 gem 'foundation-rails'
 gem 'haml-rails'
 
-# js flash
+# js candy
 gem 'toastr-rails'
+gem 'mmenu-rails'
 
 # icon font
 gem 'entypo-rails'
@@ -64,6 +65,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'quiet_assets'
+  gem 'thin'
 end
 
 # various
