@@ -1,6 +1,6 @@
 class Observation < ActiveRecord::Base
   extend TimeSplitter::Accessors
-  split_accessor :date_and_time
+  split_accessor :recorded_at
 
   belongs_to :account
   belongs_to :data_monkey, class_name: 'User'

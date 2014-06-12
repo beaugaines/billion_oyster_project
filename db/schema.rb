@@ -56,7 +56,7 @@ ActiveRecord::Schema.define(version: 20140612162322) do
     t.integer  "humidity",                                         null: false
     t.string   "sky_conditions",                                   null: false
     t.hstore   "recent_weather",                                   null: false
-    t.datetime "date_and_time",                                    null: false
+    t.datetime "recorded_at",                                      null: false
     t.decimal  "high_tide_level",          precision: 4, scale: 2, null: false
     t.string   "approx_tide_level",                                null: false
     t.hstore   "water_conditions",                                 null: false
