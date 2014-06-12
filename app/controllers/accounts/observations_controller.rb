@@ -1,4 +1,4 @@
-class Account::ObservationsController < ApplicationController
+class Accounts::ObservationsController < ApplicationController
 
   def index
     # @observations = current_user.observations
@@ -7,6 +7,7 @@ class Account::ObservationsController < ApplicationController
 
   def new
     @observation = Observation.new
+    @account = current_user.account
     @site_names = current_user.account.sites
   end
   

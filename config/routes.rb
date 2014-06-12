@@ -5,8 +5,8 @@ NewBillOyst::Application.routes.draw do
     resources :observations, controller: 'users/observations'
   end
 
-  resources :accounts do
-    resources :observations, controller: 'account/observations'
+  resources :accounts, only: [:show, :index] do
+    resources :observations, controller: 'accounts/observations'
   end
 
   namespace :admin do
