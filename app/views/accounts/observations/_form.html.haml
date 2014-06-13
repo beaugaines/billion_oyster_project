@@ -47,4 +47,74 @@
     %h3 Land conditions
     = f.input :land_conditions, as: :text, input_html: { rows: 8 }, label: 'What does the shoreline look like? Is it well-maintained and clear? Is there marine debris present on the shoreline? How much and what type? Other observations?'
 
-  
+  %fieldset
+    %h3 Oyster survey
+    = f.simple_fields_for :oyster_survey do |oyster_survey|
+      %h5 Shell lengths in milimeters(random sample of 50 oysters)
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_1, as: :integer
+        %li= oyster_survey.input :shell_length_2, as: :integer
+        %li= oyster_survey.input :shell_length_3, as: :integer
+        %li= oyster_survey.input :shell_length_4, as: :integer
+        %li= oyster_survey.input :shell_length_5, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_6, as: :integer
+        %li= oyster_survey.input :shell_length_7, as: :integer
+        %li= oyster_survey.input :shell_length_8, as: :integer
+        %li= oyster_survey.input :shell_length_9, as: :integer
+        %li= oyster_survey.input :shell_length_10, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_11, as: :integer
+        %li= oyster_survey.input :shell_length_12, as: :integer
+        %li= oyster_survey.input :shell_length_13, as: :integer
+        %li= oyster_survey.input :shell_length_14, as: :integer
+        %li= oyster_survey.input :shell_length_15, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_16, as: :integer
+        %li= oyster_survey.input :shell_length_17, as: :integer
+        %li= oyster_survey.input :shell_length_18, as: :integer
+        %li= oyster_survey.input :shell_length_19, as: :integer
+        %li= oyster_survey.input :shell_length_20, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_21, as: :integer
+        %li= oyster_survey.input :shell_length_22, as: :integer
+        %li= oyster_survey.input :shell_length_23, as: :integer
+        %li= oyster_survey.input :shell_length_24, as: :integer
+        %li= oyster_survey.input :shell_length_25, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_26, as: :integer
+        %li= oyster_survey.input :shell_length_27, as: :integer
+        %li= oyster_survey.input :shell_length_28, as: :integer
+        %li= oyster_survey.input :shell_length_29, as: :integer
+        %li= oyster_survey.input :shell_length_30, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_31, as: :integer
+        %li= oyster_survey.input :shell_length_32, as: :integer
+        %li= oyster_survey.input :shell_length_33, as: :integer
+        %li= oyster_survey.input :shell_length_34, as: :integer
+        %li= oyster_survey.input :shell_length_35, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_36, as: :integer
+        %li= oyster_survey.input :shell_length_37, as: :integer
+        %li= oyster_survey.input :shell_length_38, as: :integer
+        %li= oyster_survey.input :shell_length_39, as: :integer
+        %li= oyster_survey.input :shell_length_40, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_41, as: :integer
+        %li= oyster_survey.input :shell_length_42, as: :integer
+        %li= oyster_survey.input :shell_length_43, as: :integer
+        %li= oyster_survey.input :shell_length_44, as: :integer
+        %li= oyster_survey.input :shell_length_45, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_46, as: :integer
+        %li= oyster_survey.input :shell_length_47, as: :integer
+        %li= oyster_survey.input :shell_length_48, as: :integer
+        %li= oyster_survey.input :shell_length_49, as: :integer
+        %li= oyster_survey.input :shell_length_50, as: :integer
+
+
+
+
+
+
+
