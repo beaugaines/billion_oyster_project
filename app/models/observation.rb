@@ -7,4 +7,5 @@ class Observation < ActiveRecord::Base
 
   WATER_CONDITIONS = %w(Glassy/smooth Small\ chop Big\ chop
                         Ripples Small\ swell Big\ swell).freeze
+  CAGE_CONDITIONS = %w(Clean Lightly\ fouled Medium\ fouling Heavy\ fouling).freeze
 end

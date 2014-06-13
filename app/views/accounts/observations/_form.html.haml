@@ -29,10 +29,15 @@
     %h3 Water Conditions
     = f.input :high_tide_level, placeholder: 'e.g. 5.75'
     = f.input :approx_tide_level, label: 'Approximate tide', placeholder: 'e.g. dead low, low, mid, etc.'
-    = f.simple_fields_for :water_conditions do |water_condition|
-      = water_condition.input :surface_conditions, collection: Observation::WATER_CONDITIONS, as: :check_boxes
-      = water_condition.input :visibility, label: 'Visibility (in feet)'
-      = water_condition.input :water_color
-      = water_condition.input :water_pollution, label: 'Oil sheen, marine debris, other pollution'
-      = water_condition.input :other_observations 
-    
+
+    = f.simple_fields_for :water_conditions do |water_conditions|
+      = water_conditions.input :surface_conditions, collection: Observation::WATER_CONDITIONS, as: :check_boxes
+      = water_conditions.input :visibility, label: 'Visibility (in feet)'
+      = water_conditions.input :water_color
+      = water_conditions.input :water_pollution, label: 'Oil sheen, marine debris, other pollution', as: :text, input_html: { rows: 3 }
+      = water_conditions.input :other_observations, as: :text, input_html: { rows: 3 }
+
+    = f.simple_fields_for :oyster_cage_conditions do |oyster_cage_conditions|
+      = oyster_cage_conditions.input :depth_of_cage, label: 'Submerged depth of cage', input_html: { data: { 'tooltip' => ''}, class: 'has-tip', title: 'length of fouled line from water surface down to cage' }
+      = oyster_cage_conditions.input :cage_fouling, collection: Observation::CAGE_CONDITIONS, as: :radio_buttons
+      = oyster_cage_conditions.input :cage_damage, label: 'Damage to cage?(please specify)', as: :text, input_html: { rows: 5 }
