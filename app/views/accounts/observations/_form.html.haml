@@ -25,4 +25,11 @@
     %h3 Time of Monitor
     = f.input :recorded_at_date, as: :string, input_html: { class: 'datepicker' }, placeholder: 'e.g. 10/24/2014'
     = f.input :recorded_at_time, input_html: { class: 'timepicker' }
+  %fieldset
+    %h3 Water Conditions
+    = f.input :high_tide_level, placeholder: 'e.g. 5.75'
+    = f.input :approx_tide_level, label: 'Approximate tide', placeholder: 'e.g. dead low, low, mid, etc.'
+    = f.simple_fields_for :water_conditions do |water_conditions|
+      = water_conditions.input :surface_conditions, placeholder: 'e.g. smooth, ' 
+ 
     
