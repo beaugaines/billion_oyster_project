@@ -4,7 +4,8 @@
 $ ->
   $('.datepicker').each ->
     $(this).datepicker({
-      dateFormat: 'yy-mm-dd'
+      dateFormat: 'yy-mm-dd',
+      inline: true
     })
 
   $('.timepicker').timepicker()

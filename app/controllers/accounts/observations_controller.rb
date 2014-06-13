@@ -12,6 +12,7 @@ class Accounts::ObservationsController < ApplicationController
   end
 
   def create
+    binding.pry
     @account = current_user.account
     @observation = @account.observations.build(observation_params)
     @observation.user_id = current_user.id
