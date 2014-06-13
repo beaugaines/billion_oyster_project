@@ -32,7 +32,7 @@
                 %a{href: "/"} Dashboard
             %section.section
               %h5.title
-              - if current_user.account.present?
+              - if current_user.account.present? if current_user.present?
                 = link_to 'My Observations', account_observations_path(current_user.account)
             %section.section
               %h5.title
