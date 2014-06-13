@@ -14,6 +14,8 @@ Bundler.require(:default, Rails.env)
 module NewBillOyst
   class Application < Rails::Application
 
+    config.active_record.schema_format = :sql
+
     config.time_zone = 'Eastern Time (US & Canada)'
     config.active_record.default_timezone = :local
 

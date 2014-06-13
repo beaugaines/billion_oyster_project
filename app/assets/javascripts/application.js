@@ -13,11 +13,13 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
-//= require cloudinary/jquery.cloudinary
 //= require jquery.ui.widget
+//= require jquery.ui.datepicker
+//= require jquery.timepicker.js
 //= require jquery.iframe-transport
 //= require jquery.fileupload
 //= require attachinary
+//= require cloudinary/jquery.cloudinary
 //= require underscore
 //= require gmaps/google
 //= require turbolinks

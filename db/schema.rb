@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410215956) do
+ActiveRecord::Schema.define(version: 20140612162322) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
   enable_extension "uuid-ossp"
+  enable_extension "hstore"
 
   create_table "accounts", force: true do |t|
     t.string   "name"
@@ -27,7 +28,10 @@ ActiveRecord::Schema.define(version: 20140410215956) do
     t.datetime "updated_at"
     t.string   "street_address"
     t.string   "full_address"
+    t.string   "slug"
   end
+
+  add_index "accounts", ["slug"], name: "index_accounts_on_slug", unique: true, using: :btree
 
   create_table "attachinary_files", force: true do |t|
     t.integer  "attachinariable_id"
@@ -44,6 +48,30 @@ ActiveRecord::Schema.define(version: 20140410215956) do
   end
 
   add_index "attachinary_files", ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent", using: :btree
+
+  create_table "observations", force: true do |t|
+    t.integer  "account_id"
+    t.string   "site_name",                                        null: false
+    t.integer  "wind_speed",                                       null: false
+    t.integer  "humidity",                                         null: false
+    t.string   "sky_conditions",                                   null: false
+    t.hstore   "recent_weather",                                   null: false
+    t.datetime "recorded_at",                                      null: false
+    t.decimal  "high_tide_level",          precision: 4, scale: 2, null: false
+    t.string   "approx_tide_level",                                null: false
+    t.hstore   "oyster_cage_conditions",                           null: false
+    t.text     "land_conditions",                                  null: false
+    t.hstore   "oyster_survey",                                    null: false
+    t.hstore   "reef_associate_survey",                            null: false
+    t.hstore   "water_quality_assessment",                         null: false
+    t.text     "general_observations",                             null: false
+    t.uuid     "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.hstore   "water_conditions",                                 null: false
+  end
+
+  add_index "observations", ["account_id"], name: "index_observations_on_account_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.string   "title"
@@ -96,12 +124,14 @@ ActiveRecord::Schema.define(version: 20140410215956) do
     t.decimal  "lat",                    precision: 10, scale: 6, default: 40.67, null: false
     t.decimal  "lon",                    precision: 10, scale: 6, default: 73.94, null: false
     t.string   "slug"
+    t.hstore   "settings"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["invitation_token"], name: "index_users_on_invitation_token", unique: true, using: :btree
   add_index "users", ["invited_by_id"], name: "index_users_on_invited_by_id", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["settings"], name: "index_users_on_settings", using: :btree
   add_index "users", ["slug"], name: "index_users_on_slug", using: :btree
 
 end

@@ -1,0 +1,68 @@
+Account
+
+  has_many :observations
+
+User
+  has_many :observations, through: :account
+
+Observation
+
+  belongs_to :account
+  belongs_to :user
+  has_many :images
+
+  t.string :site_name
+
+  # weather
+  t.integer :wind_speed
+  t.integer :humidity
+  t.string :sky_conditions
+
+  t.hstore :recent_weather
+
+  # QUESTION: previous 3 days weather conditions - what will this look like?
+
+  # tide
+  t.datetime :time_of_monitor (optional:  add with jquery link if necessary)
+  t.decimal :high_tide_level
+  t.string   :approximate_tide_level
+
+  t.hstore :water_conditions
+  t.hstore :oyster_cage_conditions
+
+  t.text :land_conditions
+
+  t.hstore :oyster_survey_data
+
+    { shell_length: integer, # (x 50)
+      average_shell_length: integer, # can be wired up to jquery
+      min_shell_length: integer, # again use jquery
+      max_shell_length: integer, # jquery to rescue
+      oyster_mortality: integer
+    }
+
+  t.hstore :reef_associate_report
+    {
+      barnacles: integer,
+      blue_mussels: integer,
+      ribbed_mussels: integer,
+      ...
+    }
+
+  t.hstore :water_quality_assessment
+    {
+      water_temperature_F: integer,
+      water_temperature_C: integer,
+      turbidity: integer,
+      fecal_coliform: boolean,
+      disolved_oxygen: integer,
+      salinity: integer,
+      ph: integer,
+      nitrates: integer,
+      phosphates: integer
+    }
+
+  t.text :general_observations
+
+
+rg model Observation account:belongs_to user:references site_name:string wind_speed:integer humidity:integer sky_conditions:string recent_weather:hstore time_of_monitor:datetime high_tide_level:decimal approx_tide_level:string water_conditions:hstore oyster_cage_conditions:hstore land_conditions:text oyster_survey:hstore reef_associate_survey:hstore water_quality_assessment:hstore general_observations:text

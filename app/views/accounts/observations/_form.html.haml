@@ -1,0 +1,145 @@
+= simple_form_for [@account, @observation] do |f|
+  %fieldset 
+    = f.input(:site_name, collection: @site_names)
+    = f.input :wind_speed, placeholder: 'Approximate...'
+    = f.input :humidity
+    = f.input :sky_conditions
+  %fieldset 
+    %h3 Recent Weather Conditions
+    = f.simple_fields_for :recent_weather do |recent_weather|
+      %h5 One day ago
+      = recent_weather.input :one_day_ago_general, label: 'General', placeholder: 'E.g Mixed clouds, breezy, warm'
+      = recent_weather.input :one_day_ago_temperature, label: 'Temperature', placeholder: 'e.g. 75'
+      = recent_weather.input :one_day_ago_rainfall, label: 'Rainfall', placeholder: 'e.g. 3'
+
+      %h5 Two days ago
+      = recent_weather.input :two_day_ago_general, label: 'General'
+      = recent_weather.input :two_day_ago_temperature, label: 'Temperature'
+      = recent_weather.input :two_day_ago_rainfall, label: 'Rainfall'
+
+      %h5 Three days ago
+      = recent_weather.input :three_day_ago_general, label: 'General'
+      = recent_weather.input :three_day_ago_temperature, label: 'Temperature'
+      = recent_weather.input :three_day_ago_rainfall, label: 'Rainfall'
+  %fieldset
+    %h3 Time of Monitor
+    = f.input :recorded_at_date, as: :string, input_html: { class: 'datepicker' }, placeholder: 'e.g. 10/24/2014'
+    = f.input :recorded_at_time, input_html: { class: 'timepicker' }
+  %fieldset
+    %h3 Water Conditions
+    = f.input :high_tide_level, placeholder: 'e.g. 5.75'
+    = f.input :approx_tide_level, label: 'Approximate tide', placeholder: 'e.g. dead low, low, mid, etc.'
+
+    = f.simple_fields_for :water_conditions do |water_conditions|
+      = water_conditions.input :surface_conditions, collection: Observation::WATER_CONDITIONS, as: :check_boxes
+      = water_conditions.input :visibility, label: 'Visibility (in feet)'
+      = water_conditions.input :water_color
+      = water_conditions.input :water_pollution, label: 'Oil sheen, marine debris, other pollution', as: :text, input_html: { rows: 3 }
+      = water_conditions.input :other_observations, as: :text, input_html: { rows: 3 }
+
+  %fieldset
+    %h3 Oyster cage conditions
+    = f.simple_fields_for :oyster_cage_conditions do |oyster_cage_conditions|
+      = oyster_cage_conditions.input :depth_of_cage, label: 'Submerged depth of cage', input_html: { data: { 'tooltip' => ''}, class: 'has-tip', title: 'length of fouled line from water surface down to cage' }
+      = oyster_cage_conditions.input :cage_fouling, collection: Observation::CAGE_CONDITIONS, as: :radio_buttons
+      = oyster_cage_conditions.input :cage_damage, label: 'Damage to cage?(please specify)', as: :text, input_html: { rows: 5 }
+  %fieldset
+    %h3 Land conditions
+    = f.input :land_conditions, as: :text, input_html: { rows: 8 }, label: 'What does the shoreline look like? Is it well-maintained and clear? Is there marine debris present on the shoreline? How much and what type? Other observations?'
+
+  %fieldset
+    %h3 Oyster survey
+    = f.simple_fields_for :oyster_survey do |oyster_survey|
+      %h5 Shell lengths in milimeters(random sample of 50 oysters)
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_1, as: :integer
+        %li= oyster_survey.input :shell_length_2, as: :integer
+        %li= oyster_survey.input :shell_length_3, as: :integer
+        %li= oyster_survey.input :shell_length_4, as: :integer
+        %li= oyster_survey.input :shell_length_5, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_6, as: :integer
+        %li= oyster_survey.input :shell_length_7, as: :integer
+        %li= oyster_survey.input :shell_length_8, as: :integer
+        %li= oyster_survey.input :shell_length_9, as: :integer
+        %li= oyster_survey.input :shell_length_10, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_11, as: :integer
+        %li= oyster_survey.input :shell_length_12, as: :integer
+        %li= oyster_survey.input :shell_length_13, as: :integer
+        %li= oyster_survey.input :shell_length_14, as: :integer
+        %li= oyster_survey.input :shell_length_15, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_16, as: :integer
+        %li= oyster_survey.input :shell_length_17, as: :integer
+        %li= oyster_survey.input :shell_length_18, as: :integer
+        %li= oyster_survey.input :shell_length_19, as: :integer
+        %li= oyster_survey.input :shell_length_20, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_21, as: :integer
+        %li= oyster_survey.input :shell_length_22, as: :integer
+        %li= oyster_survey.input :shell_length_23, as: :integer
+        %li= oyster_survey.input :shell_length_24, as: :integer
+        %li= oyster_survey.input :shell_length_25, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_26, as: :integer
+        %li= oyster_survey.input :shell_length_27, as: :integer
+        %li= oyster_survey.input :shell_length_28, as: :integer
+        %li= oyster_survey.input :shell_length_29, as: :integer
+        %li= oyster_survey.input :shell_length_30, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_31, as: :integer
+        %li= oyster_survey.input :shell_length_32, as: :integer
+        %li= oyster_survey.input :shell_length_33, as: :integer
+        %li= oyster_survey.input :shell_length_34, as: :integer
+        %li= oyster_survey.input :shell_length_35, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_36, as: :integer
+        %li= oyster_survey.input :shell_length_37, as: :integer
+        %li= oyster_survey.input :shell_length_38, as: :integer
+        %li= oyster_survey.input :shell_length_39, as: :integer
+        %li= oyster_survey.input :shell_length_40, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_41, as: :integer
+        %li= oyster_survey.input :shell_length_42, as: :integer
+        %li= oyster_survey.input :shell_length_43, as: :integer
+        %li= oyster_survey.input :shell_length_44, as: :integer
+        %li= oyster_survey.input :shell_length_45, as: :integer
+      %ul.small-block-grid-5
+        %li= oyster_survey.input :shell_length_46, as: :integer
+        %li= oyster_survey.input :shell_length_47, as: :integer
+        %li= oyster_survey.input :shell_length_48, as: :integer
+        %li= oyster_survey.input :shell_length_49, as: :integer
+        %li= oyster_survey.input :shell_length_50, as: :integer
+
+  %fieldset
+    %h3 Reef associate survey
+    = f.simple_fields_for :reef_associate_survey do |reef_associate_survey|
+      = reef_associate_survey.input :barnacles, as: :integer
+      = reef_associate_survey.input :blue_mussels, as: :integer
+      = reef_associate_survey.input :ribbed_mussels, as: :integer
+      = reef_associate_survey.input :slipper_shells, as: :integer
+      = reef_associate_survey.input :sea_squirts, as: :integer
+      = reef_associate_survey.input :grass_shrimp, as: :integer
+      = reef_associate_survey.input :mud_crabs, as: :integer
+      = reef_associate_survey.input :blue_crabs, as: :integer
+      = reef_associate_survey.input :clam_and_sand_worms, as: :integer
+      = reef_associate_survey.input :oyster_drills, as: :integer
+
+  %fieldset
+    %h3 Water quality assessment
+    = f.simple_fields_for :water_quality_assessment do |water_quality_assessment|
+      = water_quality_assessment.input :fahrenheit_temperature, label: 'Temperature (F)', as: :integer
+      = water_quality_assessment.input :celsius_temperature, label: 'Temperature (C)', as: :integer
+      = water_quality_assessment.input :turbidity, label: 'Turbidity (JTU)', as: :integer
+      = water_quality_assessment.input :fecal_coliform, label: 'Fecal coliform', as: :radio_buttons
+      = water_quality_assessment.input :salinity, label: 'Salinity (ppt)', as: :integer
+      = water_quality_assessment.input :ph, label: 'pH', as: :integer
+      = water_quality_assessment.input :nitrates, label: 'Nitrates (ppm)', as: :integer
+      = water_quality_assessment.input :phosphates, label: 'Phosphates (ppm)', as: :integer
+
+  %fieldset
+    %h3 General observations
+    = f.input :general_observations, label: 'What else do you observe in or around your oyster garden? This can include social, biological, or environmental observations. For example if you see: flocks of birds nearby, school of fish swimming around oyster garden, the oyster cage is damaged, public visitors asking questions about oyster gardening - write all of these observations here.', as: :text, input_html: { rows: 10 }
+
+  = f.button :submit, class: 'small radius button'
