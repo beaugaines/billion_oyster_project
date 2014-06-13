@@ -6,6 +6,7 @@ ruby '2.1.1'
 # core
 gem 'rails', '4.0.5'
 gem 'pg'
+gem 'thin'
 gem 'turbolinks'
 gem 'devise'
 gem 'devise_invitable'
@@ -68,7 +69,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'meta_request'
   gem 'quiet_assets'
-  gem 'thin'
 end
 
 # various
