@@ -1,6 +1,11 @@
 class ChangeColumnTypeForWaterConditions < ActiveRecord::Migration
-  def change
-    # change_column :observations, :water_conditions, "varchar[] USING (string_to_array(water_conditions, ','))"
-    change_column :observations, :water_conditions, :string, array: true, default: '{}'
+  def up
+    drop_column :observations, :water_conditions
+    add_column :observations, :water_conditions, :string, array: true, default: '{}'
+  end
+
+  def down
+    drop_column :observations, :water_conditions
+    add_column :observations, :water_conditions, :hstore
   end
 end
