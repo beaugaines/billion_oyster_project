@@ -23,6 +23,7 @@
 //= require underscore
 //= require gmaps/google
 //= require turbolinks
+//= require toastr
 //= require foundation
 //= require_tree .
 
