@@ -19,7 +19,7 @@ class Admin::AccountsController < AdminController
   end
 
   def show
-    @account = Account.find(params[:id])
+    @account = Account.friendly.find(params[:id])
   end
   
 
