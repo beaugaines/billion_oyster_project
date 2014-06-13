@@ -111,4 +111,35 @@
         %li= oyster_survey.input :shell_length_48, as: :integer
         %li= oyster_survey.input :shell_length_49, as: :integer
         %li= oyster_survey.input :shell_length_50, as: :integer
+
+  %fieldset
+    %h3 Reef associate survey
+    = f.simple_fields_for :reef_associate_survey do |reef_associate_survey|
+      = reef_associate_survey.input :barnacles, as: :integer
+      = reef_associate_survey.input :blue_mussels, as: :integer
+      = reef_associate_survey.input :ribbed_mussels, as: :integer
+      = reef_associate_survey.input :slipper_shells, as: :integer
+      = reef_associate_survey.input :sea_squirts, as: :integer
+      = reef_associate_survey.input :grass_shrimp, as: :integer
+      = reef_associate_survey.input :mud_crabs, as: :integer
+      = reef_associate_survey.input :blue_crabs, as: :integer
+      = reef_associate_survey.input :clam_and_sand_worms, as: :integer
+      = reef_associate_survey.input :oyster_drills, as: :integer
+
+  %fieldset
+    %h3 Water quality assessment
+    = f.simple_fields_for :water_quality_assessment do |water_quality_assessment|
+      = water_quality_assessment.input :fahrenheit_temperature, label: 'Temperature (F)', as: :integer
+      = water_quality_assessment.input :celsius_temperature, label: 'Temperature (C)', as: :integer
+      = water_quality_assessment.input :turbidity, label: 'Turbidity (JTU)', as: :integer
+      = water_quality_assessment.input :fecal_coliform, label: 'Fecal coliform', as: :radio_buttons
+      = water_quality_assessment.input :salinity, label: 'Salinity (ppt)', as: :integer
+      = water_quality_assessment.input :ph, label: 'pH', as: :integer
+      = water_quality_assessment.input :nitrates, label: 'Nitrates (ppm)', as: :integer
+      = water_quality_assessment.input :phosphates, label: 'Phosphates (ppm)', as: :integer
+
+  %fieldset
+    %h3 General observations
+    = f.input :general_observations, label: 'What else do you observe in or around your oyster garden? This can include social, biological, or environmental observations. For example if you see: flocks of birds nearby, school of fish swimming around oyster garden, the oyster cage is damaged, public visitors asking questions about oyster gardening - write all of these observations here.', as: :text, input_html: { rows: 10 }
+
   = f.button :submit, class: 'small radius button'

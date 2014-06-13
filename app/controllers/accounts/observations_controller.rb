@@ -27,12 +27,13 @@ class Accounts::ObservationsController < ApplicationController
   private
 
   def observation_params
-    params.require(:observation).permit(:account, :user, :site_name, :wind_speed,
-                                 :humidity, :sky_conditions, :recent_weather,
-                                 :time_of_monitor, :high_tide_level, :approx_tide_level,
-                                 :water_conditions, :oyster_cage_conditions,
-                                 :land_conditions, :oyster_survey, :reef_associate_survey,
-                                 :water_quality_assessment, :general_observations, )
+    params.require(:observation).permit!  #(:account, :user, :site_name, :wind_speed,
+                                 #:humidity, :sky_conditions, :recent_weather,
+                                 #:one_day_ago_general, :one_day
+                                 #:time_of_monitor, :high_tide_level, :approx_tide_level,
+                                 #:water_conditions, :oyster_cage_conditions,
+                                 #:land_conditions, :oyster_survey, :reef_associate_survey,
+                                 #:water_quality_assessment, :general_observations, )
   end
   
 end
