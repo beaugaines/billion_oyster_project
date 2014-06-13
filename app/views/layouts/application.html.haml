@@ -25,15 +25,15 @@
         %nav.panel#navigation
           = show_avatar_for(current_user) if current_user
           %h5
-            %a{href: "#"} Joe User
+            %p= current_user.full_name
           .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
             %section.section
               %h5.title
-                %a{href: "/"} Dashboard
+                = link_to 'Dashboard', root_path
             %section.section
               %h5.title
-              - if current_user && current_user.account.present?
-                = link_to 'My Observations', account_observations_path(current_user.account)
+                - if current_user && current_user.account.present?
+                  = link_to 'My Observations', account_observations_path(current_user.account)
             %section.section
               %h5.title
                 = link_to 'My Posts', posts_path

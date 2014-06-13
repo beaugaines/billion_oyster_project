@@ -9,5 +9,6 @@ class Dashboard
   def owner
     user.email
   end
+  
 end
   
