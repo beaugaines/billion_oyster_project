@@ -1,12 +1,12 @@
 # # geocomplete addresses
 
-# jQuery ->
-#   $('#geocomplete').geocomplete
-#     details: 'form'
-#     detailsAttribute: 'data-geo'
+$ ->
+  $('#geocomplete').geocomplete
+    details: 'form'
+    detailsAttribute: 'data-geo'
 
-#     $('#find').click ->
-#       $('#geocomplete').trigger 'geocode'
+    $('#find').click ->
+      $('#geocomplete').trigger 'geocode'
 
 # jQuery ->
 #   handler = Gmaps.build("Google")
