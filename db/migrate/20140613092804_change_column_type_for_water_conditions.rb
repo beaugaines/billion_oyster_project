@@ -1,11 +1,11 @@
 class ChangeColumnTypeForWaterConditions < ActiveRecord::Migration
   def up
-    drop_column :observations, :water_conditions
-    add_column :observations, :water_conditions, :string, array: true, default: '{}'
+    remove_column :observations, :water_conditions
+    add_column :observations, :water_conditions, :string, array: true, default: '{}', null: false
   end
 
   def down
-    drop_column :observations, :water_conditions
-    add_column :observations, :water_conditions, :hstore
+    remove_column :observations, :water_conditions
+    add_column :observations, :water_conditions, :hstore, null: false
   end
 end

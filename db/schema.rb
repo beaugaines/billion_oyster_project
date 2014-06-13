@@ -59,7 +59,6 @@ ActiveRecord::Schema.define(version: 20140612162322) do
     t.datetime "recorded_at",                                      null: false
     t.decimal  "high_tide_level",          precision: 4, scale: 2, null: false
     t.string   "approx_tide_level",                                null: false
-    t.hstore   "water_conditions",                                 null: false
     t.hstore   "oyster_cage_conditions",                           null: false
     t.text     "land_conditions",                                  null: false
     t.hstore   "oyster_survey",                                    null: false
@@ -69,6 +68,7 @@ ActiveRecord::Schema.define(version: 20140612162322) do
     t.uuid     "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.hstore   "water_conditions"
   end
 
   add_index "observations", ["account_id"], name: "index_observations_on_account_id", using: :btree

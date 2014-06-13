@@ -4,4 +4,7 @@ class Observation < ActiveRecord::Base
 
   belongs_to :account
   belongs_to :data_monkey, class_name: 'User'
+
+  WATER_CONDITIONS = %w(Glassy/smooth Small\ chop Big\ chop
+                        Ripples Small\ swell Big\ swell).freeze
 end
