@@ -68,7 +68,7 @@ ActiveRecord::Schema.define(version: 20140612162322) do
     t.uuid     "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.hstore   "water_conditions"
+    t.hstore   "water_conditions",                                 null: false
   end
 
   add_index "observations", ["account_id"], name: "index_observations_on_account_id", using: :btree

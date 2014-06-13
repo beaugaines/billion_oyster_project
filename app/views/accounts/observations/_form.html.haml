@@ -29,6 +29,10 @@
     %h3 Water Conditions
     = f.input :high_tide_level, placeholder: 'e.g. 5.75'
     = f.input :approx_tide_level, label: 'Approximate tide', placeholder: 'e.g. dead low, low, mid, etc.'
-    = f.input :water_conditions, collection: Observation::WATER_CONDITIONS, as: :check_boxes
- 
+    = f.simple_fields_for :water_conditions do |water_condition|
+      = water_condition.input :surface_conditions, collection: Observation::WATER_CONDITIONS, as: :check_boxes
+      = water_condition.input :visibility, label: 'Visibility (in feet)'
+      = water_condition.input :water_color
+      = water_condition.input :water_pollution, label: 'Oil sheen, marine debris, other pollution'
+      = water_condition.input :other_observations 
     

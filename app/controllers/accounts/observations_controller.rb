@@ -14,6 +14,7 @@ class Accounts::ObservationsController < ApplicationController
   def create
     @account = current_user.account
     @observation = @account.observations.build(observation_params)
+    @observation.user_id = current_user.id
     if @observation.save
       redirect_to root_path, notice: 'Observation recorded'
     else
