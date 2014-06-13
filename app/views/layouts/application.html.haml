@@ -23,7 +23,7 @@
     .row
       .medium-3.columns
         %nav.panel#navigation
-          = show_avatar_for(current_user)
+          = show_avatar_for(current_user) if current_user.present?
           %h5
             %a{href: "#"} Joe User
           .section-container.vertical-nav{"data-options" => "deep_linking: false; one_up: true", "data-section" => ""}
